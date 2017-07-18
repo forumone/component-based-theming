@@ -7,7 +7,7 @@
 /web/libraries/
 
 # Ignore sensitive information
-
+/web/sites/default/files/*config*
 
 # Ignore Drupal's file directory
 /web/sites/default/files/css/
