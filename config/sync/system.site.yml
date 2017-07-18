@@ -1,0 +1,15 @@
+uuid: 59cf03d6-e073-4d9f-b2f9-30eaf57f322e
+name: 'Pacific Whale Conservancy'
+mail: pwc@forumone.com
+slogan: 'Safe Waters, Safe Whales'
+page:
+  403: ''
+  404: ''
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
+mail_notification: ''

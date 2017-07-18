@@ -1,0 +1,16 @@
+uuid: fe13dc56-5fff-498e-8616-8a11b7415158
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity_image
+id: image
+label: Image
+description: 'Image media type used for sharing images across site'
+type: image
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_image
+  gather_exif: false
+field_map: {  }

@@ -1,0 +1,15 @@
+uuid: dcf465b5-e56d-4d09-827c-fe3c401bbb26
+langcode: en
+status: true
+dependencies:
+  module:
+    - video_embed_media
+id: video
+label: Video
+description: 'Video media type used for sharing video across site'
+type: video_embed_field
+queue_thumbnail_downloads: false
+new_revision: false
+type_configuration:
+  source_field: field_video_url
+field_map: {  }

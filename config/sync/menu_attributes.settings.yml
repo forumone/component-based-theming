@@ -1,0 +1,20 @@
+attribute_enable:
+  title: false
+  id: false
+  name: false
+  rel: false
+  class: true
+  style: false
+  target: true
+  accesskey: false
+attribute_default:
+  title: ''
+  id: ''
+  name: ''
+  rel: ''
+  class: ''
+  style: ''
+  target: ''
+  accesskey: ''
+_core:
+  default_config_hash: MhLLiI0DpuBm9-5eSUO6nTwGAh2OFiFQ1XwQTJCznkg

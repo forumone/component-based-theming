@@ -1,0 +1,33 @@
+uuid: c3373186-316b-4d90-9d57-0b26ddc21ce9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.media_entity_browser
+  module:
+    - views
+_core:
+  default_config_hash: 71sSVsh1IPptaN_e4ckt-tmTkqcqCb0tVEXHhX_zywI
+name: media_entity_browser
+label: 'Media Entity Browser'
+display: iframe
+display_configuration:
+  width: '1070'
+  height: '840'
+  link_text: 'Select media'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  6586703a-6976-4124-8a49-cbb07ceaa3b1:
+    settings:
+      view: media_entity_browser
+      view_display: media_browser
+      submit_text: 'Select media'
+      auto_select: false
+    uuid: 6586703a-6976-4124-8a49-cbb07ceaa3b1
+    weight: 1
+    label: 'All Media'
+    id: view

@@ -1,0 +1,31 @@
+uuid: a32e8663-8880-4a63-be02-76860538ac85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.video.field_video_url
+    - media_entity.bundle.video
+  module:
+    - video_embed_field
+id: media.video.default
+targetEntityType: media
+bundle: video
+mode: default
+content:
+  field_video_url:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: video_embed_field_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true
