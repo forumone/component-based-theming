@@ -1,131 +1,146 @@
-# Composer template for Drupal projects
+# Component-based Theming with Twig
 
-[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)
+This repository is for using a Composer based workflow with Drupal 8.  We will be using this repository and the branches to maintain various snapshots as we progress thru each lesson.  Below is a list of requirements that will ensure you get the most out of the training.
 
-This project template should provide a kickstart for managing your site
-dependencies with [Composer](https://getcomposer.org/).
+Please ensure that you follow the directions outlined as we will not be able to cover these steps in class nor stop class to assist with setting up laptops.
 
-If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/8.x/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+## Requirements
 
-## Usage
+ - Administrative rights to install and configure various applications
+ - Acquia Dev Desktop
+ - Composer
+ - NPM
+ - Grunt
 
-First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
+### Acquia Dev Desktop
 
-> Note: The instructions below refer to the [global composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar) 
-for your setup.
 
-After that you can create the project:
+### Composer
+You will also need to ensure you have globally installed `Composer` as we will be using this to manage Drupal 8.
+
+### NPM
+
+### Grunt
+
+### Acquia Dev Desktop
+
+### Cloning the repo
+
+### Installing Drupal 8
+
+### Importing the Database
+
+
+
+
+
+2) You will also need to ensure you have globally installed `Composer`, `Drush` and/or `Drupal Console` as these tools will be used to install Drupal and run various commands such as enabling PHP's built-in server and clearing Drupal's cache.
+    * OSX and Linux users can refer to the [Development Workflow](https://github.com/chazchumley/component-training/blob/master/docs/developer-workflow.pdf) document to assist you with globaly installing Composer, Drush and Drupal Console.
+
+3) Finally as we will be working with Pattern Lab, Sass and Twig we will need to ensure we can use `npm` and `grunt` which requires that both [nodejs](https://nodejs.org/en/) and [grunt-cli](https://gruntjs.com/getting-started) are installed.
+
+Once your environment is configured you can easily create a Drupal 8 project by opening a terminal window, changing into the project root directory and running the following commands:
+```
+composer install
+composer drupal-scaffold
+```
+The `composer install` command reads the `composer.json` file to install Drupal 8 and any dependencies it needs.  Any contributed modules will also be installed and the Drupal directory structure will be scaffolded.
+
+To test PHP's built-in webserver can be run, enter the following command in the terminal window.
 
 ```
-composer create-project drupal-composer/drupal-project:8.x-dev some-dir --stability dev --no-interaction
+cd web
+drush rs
 ```
 
-With `composer require ...` you can download new dependencies to your 
-installation.
+To start PHP's built-in webserver using Drupal Console, run the following command.
 
 ```
-cd some-dir
-composer require drupal/devel:~1.0
+drupal server
 ```
 
-The `composer create-project` command passes ownership of all files to the 
-project that is created. You should create a new git repository, and commit 
-all files not excluded by the .gitignore file.
+## Acquia Dev Desktop (Windows, OSX)
+1) Download and install [Acquia Dev Desktop](https://dev.acquia.com/downloads)
+2)
 
-## What does the template do?
+# Lesson Two: Tools
+During this lesson we will be reviewing various tools such as Git to clone our themes repo to our project, Composer to create a Pattern Lab project within our theme, NPM to install theme dependencies and finally Grunt to help build our theme's assets.
 
-When installing the given `composer.json` some tasks are taken care of:
+OSX and Linux users will want to instal these tools globally.  Windows users I would recommend using [Drupal VM](https://www.drupalvm.com/) which has these tools packaged within a virtual environment.
 
-* Drupal will be installed in the `web`-directory.
-* Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-  instead of the one provided by Drupal (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
-* Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
-* Creates default writable versions of `settings.php` and `services.yml`.
-* Creates `web/sites/default/files`-directory.
-* Latest version of drush is installed locally for use at `vendor/bin/drush`.
-* Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
+## Node & NPM
+[Node](https://nodejs.org/en/) is a cross platform runtime environment for creating server side and networking applications. Javascript running outside the browser.  [NPM](https://www.npmjs.com/) is the package manager for JavaScript used to install, share, and distribute code and is used to manage dependencies in projects.
 
-## Updating Drupal Core
+To intall `Node JS` and `NPM` globally we can follow the directions on the [download](https://nodejs.org/en/download/) page using one of the current installers.  Installing `Node JS` will automatically install `npm` as well.
+We can vaidate that both are installed by running the following commands in the terminal window.
 
-This project will attempt to keep all of your Drupal Core files up-to-date; the 
-project [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) 
-is used to ensure that your scaffold files are updated every time drupal/core is 
-updated. If you customize any of the "scaffolding" files (commonly .htaccess), 
-you may need to merge conflicts if any of your modified files are updated in a 
-new release of Drupal core.
-
-Follow the steps below to update your core files.
-
-1. Run `composer update drupal/core --with-dependencies` to update Drupal Core and its dependencies.
-1. Run `git diff` to determine if any of the scaffolding files have changed. 
-   Review the files for any changes and restore any customizations to 
-  `.htaccess` or `robots.txt`.
-1. Commit everything all together in a single commit, so `web` will remain in
-   sync with the `core` when checking out branches or running `git bisect`.
-1. In the event that there are non-trivial conflicts in step 2, you may wish 
-   to perform these steps on a branch, and use `git merge` to combine the 
-   updated core files with your customized files. This facilitates the use 
-   of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This setup is not necessary if your changes are simple; 
-   keeping all of your modifications at the beginning or end of the file is a 
-   good strategy to keep merges easy.
-
-## Generate composer.json from existing project
-
-With using [the "Composer Generate" drush extension](https://www.drupal.org/project/composer_generate)
-you can now generate a basic `composer.json` file from an existing project. Note
-that the generated `composer.json` might differ from this project's file.
-
-
-## FAQ
-
-### Should I commit the contrib modules I download?
-
-Composer recommends **no**. They provide [argumentation against but also 
-workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
-
-### Should I commit the scaffolding files?
-
-The [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin can download the scaffold files (like
-index.php, update.php, …) to the web/ directory of your project. If you have not customized those files you could choose
-to not check them into your version control system (e.g. git). If that is the case for your project it might be
-convenient to automatically run the drupal-scaffold plugin after every install or update of your project. You can
-achieve that by registering `@drupal-scaffold` as post-install and post-update command in your composer.json:
-
-```json
-"scripts": {
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-    "post-install-cmd": [
-        "@drupal-scaffold",
-        "..."
-    ],
-    "post-update-cmd": [
-        "@drupal-scaffold",
-        "..."
-    ]
-},
 ```
-### How can I apply patches to downloaded modules?
-
-If you need to apply patches (depending on the project being modified, a pull 
-request is often a better solution), you can do so with the 
-[composer-patches](https://github.com/cweagans/composer-patches) plugin.
-
-To add a patch to drupal module foobar insert the patches section in the extra 
-section of composer.json:
-```json
-"extra": {
-    "patches": {
-        "drupal/foobar": {
-            "Patch description": "URL to patch"
-        }
-    }
-}
+node -v
+npm -v
 ```
-### How do I switch from packagist.drupal-composer.org to packages.drupal.org?
 
-Follow the instructions in the [documentation on drupal.org](https://www.drupal.org/docs/develop/using-composer/using-packagesdrupalorg).
+## Grunt
+`Grunt` is a JavaScript task runner that allows you to perform repetitive tasks like minification, compilation, unit testing, linting and more.  We use `Grunt` to compile Sass, Pattern Lab and watch for file changes during development.
+We can use `npm` to globally install `grunt` by using the following command in the terminal window.
+
+```
+npm install -g grunt-cli
+```
+
+## Gesso
+Gesso is a [Sass](http://sass-lang.com/)-based starter theme that outputs accessible HTML5 markup. It uses a mobile-first responsive approach and leverages [SMACSS](https://smacss.com/) to organize styles as outlined in the
+[Drupal 8 CSS architecture guidelines](https://www.drupal.org/node/1887918).
+This encourages a component-based approach to theming through the creation of discrete, reusable UI elements.
+We can clone the `Gesso` repo to our `/web/theme/` folder by running the following command within the terminal window.
+
+```
+cd web/themes
+git clone git@github.com:forumone/gesso.git gesso
+cd gesso
+```
+Since we are cloning the gesso theme into our git repo we will also want to remove the git file from `gesso` to avoid any issues.  Withing the terminal window, run the following command:
+
+```
+rm -rf .git
+```
+## Pattern Lab
+At its core, Pattern Lab is a static site generator (powered by either PHP or Node) that stitches together UI components. But there's a whole lot more to it than that as we will find out once we begin looking at components.
+We can install Pattern Lab directly into our theme using `composer` to create a Pattern Lab project by entering the following commands within our terminal window.
+
+```
+composer create-project pattern-lab/edition-drupal-standard pattern-lab
+```
+If prompted, select `r` to overwrite existing `/source/` files.
+
+### Forum One starter kit
+When prompted, select `forumone/starterkit-twig-drupal-gesso` as the starterkit which is option 4.
+If prompted, select `r` to overwrite existing `/source/` files.
+
+### NPM Packages
+Next we will need to use `npm` to install any theme dependencies and packages that both our theme and Pattern Lab will need to build our assets.  We can install packages by entering the following command within the terminal window.
+
+```
+npm install
+```
+### Grunt
+Finally we will need to build our assets by entering the following command within the terminal window.
+
+```
+grunt gessoBuild
+```
+
+## Configuring Drupal for local development
+With our theme in place and Pattern Lab working, we now need to configure Drupal for local development.  This generally involves modifying the `settings.php` file and creating `settings.local.php` and `local.services.yml` to allow for both disbaled caching and to enable Twig debugging.
+
+Anytime we manage settings files we will need to have the proper file permissions. Make sure you can either change the permissions of the files or folders we will need to access or that you can authenticate when saving or creating files.
+
+### Settings.php
+If we open up our `settings.php` file and scroll to the bottom we will see a section commented out that refers to local development override configuration.  Once we uncomment this section Drupal will look for a new file to include called `settings.local.php`.  Go ahead and uncomment the section or replace your current `settings.php` file with the [gist](https://gist.github.com/chazchumley/c98fc6b89d26bc5155c19022e2059fc0) we have created.  Also since our settings.local.php file includes the database settings we will want to remove that section from `settings.php` so that we don't have duplicate database credentials.
+
+### settings.local.php
+Since our settings file is now looking for a new file we will need to create the `settings.local.php` file by copying the [gist](https://gist.github.com/chazchumley/69d0236fe6c54e6d6ee967753c5b5c5f) and placing it within the `/sites/default/` folder.
+
+### local.services.yml
+The last step is to add the [gist](https://gist.github.com/chazchumley/2a113123e983669d592ecc2581784a72) for our new local.services.yml file which will allow us to enable and disable Twig debugging.
+
+We will review each of the settings, settings.local and local services files in more detail in class.
