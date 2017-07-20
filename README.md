@@ -14,17 +14,20 @@ Below is a list of requirements that will ensure you get the most out of the tra
 - Grunt
 - Git
 
-**Acquia Dev Desktop**
+### Acquia Dev Desktop
+
 To eliminate the need for various setups that may involve different ***AMP** (Apache/MySQL/PHP) stacks we will be using Acquia Dev Desktop to work with PHP, MySQL and Drupal.  We can download and install Dev Desktop for both Windows and MAC by navigating to the [download](https://dev.acquia.com/downloads) page and following the install prompts for our operating system.
 
 Once complete we will revisit how to use Acquia Dev Desktop to import a Drupal 8 website as well as how to import database snapshots that we will use throughout the training.
 
-**Terminal**
+### Terminal
+
 The terminal is an interface in which we can type and execute text based commands.  It can be much faster to complete some tasks using a Terminal than with graphical applications and menus. The remaining requirements will all be ran from a Terminal using a series of command line prompts.  Take a moment to ensure that we have a Terminal (MAC) or Command Prompt (Windows) available to use.
 
 We will be using the terminal window to work with `Composer`, `NPM`, `Grunt` and `Git` throughout the training.  It is important to be comfortable using the command line as it should be part of our daily Front End development workflow.
 
-**Composer**
+### Composer
+
 Composer (https://getcomposer.org/) is a dependency manager for PHP that allows us to perform a multitude of tasks; everything from creating a Drupal project to declaring libraries and even installing contributed modules, just to name a few. The advantage of using Composer is that it allows us to quickly install and update dependencies by simply running a few commands from a terminal window.
 
 Composer can be installed on Windows, Linux, Unix, and OS X. For this training, we will be following the installation directions found at https://getcomposer.org/download/.  Take a look at the **Getting Started** documentation that corresponds with our operating system.
@@ -37,7 +40,8 @@ Once Composer has been installed globally we should be able to open a terminal w
 
     composer
 
-**Node & NPM**
+### Node & NPM
+
 [Node](https://nodejs.org/en/) is a cross platform runtime environment for creating server side and networking applications. Javascript running outside the browser. [NPM](https://www.npmjs.com/) is the package manager for JavaScript used to install, share, and distribute code and is used to manage dependencies in projects.
 
 
@@ -51,7 +55,8 @@ We can validate that both are installed by running the following commands in the
     node -v
     npm -v
 
-**Grunt**
+### Grunt
+
 [Grunt](https://gruntjs.com/) is a JavaScript task runner that allows us to perform repetitive tasks like minification, compilation, unit testing, linting and more. We use `Grunt` to compile Sass, Pattern Lab and watch for file changes during development. 
 
 We can use `npm` to globally install `grunt` by using the following command in the terminal window:
@@ -59,7 +64,8 @@ We can use `npm` to globally install `grunt` by using the following command in t
 
     npm install -g grunt-cli
 
-**Git**
+### Git
+
 [Git](https://git-scm.com/) is probably the most popular open source software available to manage source code. Git allows us to distribute code to ourselves or other developers and provides a robust mechanism for tracking changes, creating branches, and staging changes to software, or in our case, web projects.
 
 We can install `Git` by following the directions on the [download](https://git-scm.com/downloads) page and using on the installers for our current operating system.
@@ -121,13 +127,15 @@ Once composer is done running, we now have a fully installed Drupal 8 project.
 
 Now that we have a Drupal 8 project we can use Acquia Dev Desktop to import an existing Drupal 8 site into our self-contained environment by following these steps:
 
-**Step One**
+### Step One
+
 Open Acquia Dev Desktop
 
 - Select the + sign located in the bottom left of the UI
 - Select **Import local Drupal site.**
 
-**Step Two**
+### Step Two
+
 Complete the following fields to import our Drupal instance:
 
 - Local codebase folder: This should point to the `/web` root of our cloned project
@@ -141,7 +149,8 @@ Complete the following fields to import our Drupal instance:
 
 > You may be prompted to enter your admin credentials to complete the process.
 
-**Step Three**
+### Step Three
+
 We can now preview our Drupal 8 website by either selecting the URL next to Local site within Acquia Dev Desktop or by opening a browser and navigating to http://pwc.dd:8083/user and logging in with the following credentials:
 
 - username: **admin**
@@ -153,4 +162,3 @@ We can now preview our Drupal 8 website by either selecting the URL next to Loca
 We now have a Drupal 8 project titled Pacific Whale Conservancy that we will be using throughout the remaining training.  This Drupal 8 instance is configured with the latest best practices in mind for site building.  This includes use of the Media module, Paragraphs, various Twig modules and the Component and UI Libraries modules.
 
 This training does not cover site building but we will briefly discuss various decision made when implementing a component-based theme using Twig and Pattern Lab.
-
