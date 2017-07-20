@@ -74,7 +74,6 @@ We can validate that `Git` is installed properly by running the following comman
 
 
 ## Cloning the training files
-----------
 
 Now that we have all the necessary requirements out of the way we can proceed to cloning a copy of the training files located within the Master branch.  We will be using the `Terminal` window and `Git` during different exercises to make sure everyone is at the same starting point.
 
@@ -100,7 +99,6 @@ Finally we will want to change into the component-based-theming folder by enteri
 
 
 ## Using Composer to install Drupal
-----------
 
 Currently we have the skeleton of a Drupal 8 project.  The main reason for using a Composer based workflow recommended by Drupal is to ensure that our codebase or repository contains minimal artifacts or files.  In fact if we take a quick look at the folder structure we will see the following:
 
@@ -120,7 +118,6 @@ To complete the scaffolding of our Drupal 8 project we will need to open a termi
 Once composer is done running, we now have a fully installed Drupal 8 project.
 
 ## Importing our project into Acquia Dev Desktop
-----------
 
 Now that we have a Drupal 8 project we can use Acquia Dev Desktop to import an existing Drupal 8 site into our self-contained environment by following these steps:
 
@@ -152,7 +149,6 @@ We can now preview our Drupal 8 website by either selecting the URL next to Loca
 
 
 ## Congratulations
-----------
 
 We now have a Drupal 8 project titled Pacific Whale Conservancy that we will be using throughout the remaining training.  This Drupal 8 instance is configured with the latest best practices in mind for site building.  This includes use of the Media module, Paragraphs, various Twig modules and the Component and UI Libraries modules.
 
