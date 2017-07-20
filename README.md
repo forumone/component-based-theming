@@ -5,7 +5,6 @@ Please ensure that you follow the directions outlined below to install and confi
 
 Below is a list of requirements that will ensure you get the most out of the training.
 
-----------
 ## Requirements
 - Administrative rights to install and configure various applications
 - Acquia Dev Desktop
