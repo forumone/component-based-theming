@@ -1,4 +1,4 @@
-uuid: 57ac6810-8f69-4b2a-89ac-f8f9f747b11e
+uuid: f9232e89-1f11-4c0c-97d0-3f6a6b64ad58
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 id: gesso_main_menu
 theme: gesso
 region: header
-weight: -3
+weight: -4
 provider: null
 plugin: 'system_menu_block:main'
 settings:

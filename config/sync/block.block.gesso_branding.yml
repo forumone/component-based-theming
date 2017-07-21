@@ -1,4 +1,4 @@
-uuid: 1feeb608-4669-4474-a756-28f2e031ad8a
+uuid: 0446da98-9fef-4801-8ceb-b468b6d706bc
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: gesso_branding
 theme: gesso
 region: header
-weight: -4
+weight: -5
 provider: null
 plugin: system_branding_block
 settings:

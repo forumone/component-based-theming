@@ -103,3 +103,23 @@ With Gesso now active we can move on to previewing the Pattern Lab instance for 
 Earlier we used Composer to create an instance of Pattern Lab that is confined within our theme. To verify that Pattern Lab is functioning properly we can navigate directly to Pattern Lab within our browser by going to the following url: http://pwc.dd:8083/themes/gesso/pattern-lab/public/
 
 We will be working with Pattern Lab extensively throughout the remaining training.  While we are previewing the default out of the box version of Pattern Lab we will see in our next lesson how we can configure it to work with our Base styling, building components, layouts, templates and pages.
+
+----------
+## Notes:
+
+If you checked out this branch prior to following the steps above then a majority of these steps will already have been performed.  In order to build Pattern Lab and compile any assets needed for the Gesso theme you will need to perform the following command line steps within the terminal:
+
+
+    cd /web/themes/gesso
+    npm install
+    grunt gessoBuild
+
+Once Pattern Lab and all assets have been processed you can activate the theme if it has not already been done for you and then simply refresh your browser and the theme will display properly.
+
+If you are familiar with Configuration management in Drupal you can also perform the following command line steps within the terminal to ensure any database changes are synched up properly:
+
+
+    cd /web
+    drush cim -y
+
+Finally to have a complete snapshot of lesson two prior to checking out the next lesson you can also perform a database import using the `pwc.sql` file located in the `/db/` folder.
