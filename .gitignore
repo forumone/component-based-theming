@@ -14,6 +14,9 @@
 /web/sites/default/files/js/
 /web/sites/default/files/php/
 
+# Ignore AcquiaDevDesktop project file
+/web/sites/pwc.dd
+
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
 
