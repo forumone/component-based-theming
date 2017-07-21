@@ -12,11 +12,11 @@ This training assumes that you are already running Acquia Dev Desktop and have a
 
 In order to fully take advantage of componentizing Drupal, it helps to have an understanding of components, patterns and the differences between traditional theme-centric design and component-based design.  We will take a look at patterns that make up common web elements, break them down into smaller pieces and explain how they better fit into what is known as the atomic design principle.
 
+Slide Deck
+
 **Topics covered:**
 
 - How to identify patterns
 - What makes up a component
 - Theme-centric vs Component-based design
 - An overview of Pattern Lab
-
-Slide Deck
