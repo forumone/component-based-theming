@@ -1,0 +1,14 @@
+uuid: 726a9ece-c880-49b0-9e69-49bae489bc1f
+langcode: en
+status: true
+dependencies: {  }
+name: hero_desktop
+label: 'Hero (2000x600) Desktop'
+effects:
+  a25b67bd-04aa-4254-a8ea-940c97ac3f36:
+    uuid: a25b67bd-04aa-4254-a8ea-940c97ac3f36
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2000
+      height: 600

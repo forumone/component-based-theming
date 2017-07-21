@@ -1,0 +1,20 @@
+uuid: f0f4901e-b751-475e-9350-2e98f58c26fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - title
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  title:
+    display_configurable_title: true
+name: Species
+type: species
+description: 'Used for creating different species of whales'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

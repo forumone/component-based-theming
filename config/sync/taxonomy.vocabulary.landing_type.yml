@@ -1,0 +1,9 @@
+uuid: c8ba48e7-754f-4ceb-95dd-7c928a6b32fe
+langcode: en
+status: true
+dependencies: {  }
+name: 'Landing type'
+vid: landing_type
+description: 'Taxonomy used to identify landing type'
+hierarchy: 0
+weight: 0

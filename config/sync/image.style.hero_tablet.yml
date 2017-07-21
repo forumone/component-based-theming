@@ -1,0 +1,14 @@
+uuid: ca32b33e-8dd4-4b14-9fde-4bcae0b33b86
+langcode: en
+status: true
+dependencies: {  }
+name: hero_tablet
+label: 'Hero (990x450) Tablet'
+effects:
+  32dade93-023d-4927-a57d-4552505e50cb:
+    uuid: 32dade93-023d-4927-a57d-4552505e50cb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 990
+      height: 450

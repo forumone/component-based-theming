@@ -1,0 +1,30 @@
+uuid: df2387dd-672f-4d45-a0e2-32e5dd56571d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.card
+    - field.field.media.image.field_image
+    - media_entity.bundle.image
+    - responsive_image.styles.card
+  module:
+    - responsive_image
+id: media.image.card
+targetEntityType: media
+bundle: image
+mode: card
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      responsive_image_style: card
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

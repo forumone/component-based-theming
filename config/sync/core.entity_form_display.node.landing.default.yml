@@ -1,0 +1,53 @@
+uuid: 496a40c8-b662-4897-b6b8-04ae0e7c1e89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing.field_landing_content
+    - field.field.node.landing.field_landing_type
+    - node.type.landing
+  module:
+    - paragraphs
+    - path
+id: node.landing.default
+targetEntityType: node
+bundle: landing
+mode: default
+content:
+  field_landing_content:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: Content
+      title_plural: Content
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_landing_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

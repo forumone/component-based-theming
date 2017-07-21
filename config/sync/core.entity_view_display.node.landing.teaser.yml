@@ -1,0 +1,33 @@
+uuid: 4a4e8180-1767-48b9-b9ce-705dd9832af5
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.landing.field_landing_content
+    - field.field.node.landing.field_landing_type
+    - node.type.landing
+  module:
+    - title
+    - user
+id: node.landing.teaser
+targetEntityType: node
+bundle: landing
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+  title:
+    type: linked_and_wrapped
+    settings:
+      tag: h2
+      linked: true
+      classes: ''
+    weight: -5
+    label: above
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_landing_content: true
+  field_landing_type: true
