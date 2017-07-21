@@ -20,6 +20,8 @@ The term Front-end developer means so much more than someone who writes HTML, CS
 - Working with package managers
 - Using task runners to improve workflow
 - Configuring Drupal for Twig debugging
+- Activating Gesso
+- Previewing Pattern Lab
 
 
 ## Gesso
@@ -73,3 +75,31 @@ Finally we will need to build our assets by entering the following command withi
 With our theme in place and Pattern Lab working, we now need to configure Drupal for local development. This generally involves modifying the `settings.php` file and creating `settings.local.php` and `local.services.yml` to allow for both disabled caching and to enable Twig debugging.
 
 Anytime we manage settings files we will need to have the proper file permissions.  To make this process a little easier, we have already added the necessary `setting.local.php` and `local.services.yml` file.
+
+Using an editor of your choice, navigate to the `/web/sites/default/` folder and open the file named `local.services.yml`.  Locate the section of code commented with **Enable Twig debugging** and change the `debug: false` value to `debug:  true`.
+
+Next within a terminal window change into the the `/web/` root of our Drupal project and flush the cache by entering the following command:
+
+
+    drush cr
+
+Now that we have rebuilt Drupal’s cache our environment will display Twig comments needed for locating Twig files and any File name suggestions that we can use.
+
+## Activating Gesso
+
+In order to preview the Gesso theme along with Twig comments we need to enable and set Gesso as our Default theme within the Drupal UI.
+
+Begin by navigating to http://pwc.dd:8083/admin/appearance and locate the Gesso theme within the **Uninstalled Themes** section of the UI and follow these steps to activate it:
+
+
+- Select the Install and set as default link next to the Gesso theme
+- Navigate back to http://pwc.dd:8083/ and confirm Gesso is now active
+- Inspect the page and confirm that Twig is now displaying **FILE NAME SUGGESTIONS**
+
+With Gesso now active we can move on to previewing the Pattern Lab instance for our theme.
+
+## Previewing Pattern Lab
+
+Earlier we used Composer to create an instance of Pattern Lab that is confined within our theme. To verify that Pattern Lab is functioning properly we can navigate directly to Pattern Lab within our browser by going to the following url: http://pwc.dd:8083/themes/gesso/pattern-lab/public/
+
+We will be working with Pattern Lab extensively throughout the remaining training.  While we are previewing the default out of the box version of Pattern Lab we will see in our next lesson how we can configure it to work with our Base styling, building components, layouts, templates and pages.

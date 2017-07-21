@@ -1,0 +1,24 @@
+uuid: 57ac6810-8f69-4b2a-89ac-f8f9f747b11e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - gesso
+id: gesso_main_menu
+theme: gesso
+region: header
+weight: -3
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

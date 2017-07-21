@@ -1,0 +1,31 @@
+global:
+  version: VERSION
+  css:
+    theme:
+      css/styles.css: {}
+  js:
+    js/mobile-menu.js: {}
+    js/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/modernizr
+
+messages:
+  version: VERSION
+  css:
+    theme:
+      css/messages.css: {}
+
+pager:
+  version: VERSION
+  css:
+    theme:
+      css/pager.css: {}
+
+progress:
+  version: VERSION
+  css:
+    theme:
+      css/progress.css: {}

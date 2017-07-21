@@ -1,0 +1,20 @@
+uuid: 2866bb6d-b89d-4904-bb5f-bdff093a565c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gesso
+_core:
+  default_config_hash: PffmQ-ABSz5tFjWmVsR7NesunDnEivvopnJnBjl8KNE
+id: gesso_local_actions
+theme: gesso
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

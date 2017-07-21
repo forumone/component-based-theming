@@ -1,0 +1,24 @@
+{% extends "block--no-wrapper.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for the site branding block.
+ */
+#}
+{% block content %}
+  {% if site_logo %}
+    <a class="site-logo" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+      <img class="site-logo___image" src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+    </a>
+  {% endif %}
+  {% if site_name %}
+    <span class="site-name">
+      <a class="site-name__link" href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+        <h1 class="site-name__text">{{ site_name }}</h1>
+      </a>
+    </span>
+  {% endif %}
+  {% if site_slogan %}
+    <span class="site-slogan">{{ site_slogan }}</span>
+  {% endif %}
+{% endblock %}

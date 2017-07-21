@@ -1,0 +1,20 @@
+uuid: ad80235e-41ae-4839-a87b-999a34ad2fcd
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gesso
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: gesso_page_title
+theme: gesso
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

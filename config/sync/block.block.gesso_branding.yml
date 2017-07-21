@@ -1,0 +1,23 @@
+uuid: 1feeb608-4669-4474-a756-28f2e031ad8a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gesso
+id: gesso_branding
+theme: gesso
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

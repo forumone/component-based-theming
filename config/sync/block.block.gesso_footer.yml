@@ -1,0 +1,24 @@
+uuid: 60843312-5617-4aba-953b-29a1412933e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - gesso
+id: gesso_footer
+theme: gesso
+region: footer
+weight: -3
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }
