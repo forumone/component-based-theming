@@ -1,0 +1,14 @@
+uuid: fb360d45-10a2-4a99-b972-65a487684cfb
+langcode: en
+status: true
+dependencies: {  }
+name: hero_mobile
+label: 'Hero (700x380) Mobile'
+effects:
+  7b286e1f-a572-4b86-8564-6ed1ec291e5f:
+    uuid: 7b286e1f-a572-4b86-8564-6ed1ec291e5f
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 380

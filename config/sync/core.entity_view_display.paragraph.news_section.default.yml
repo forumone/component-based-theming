@@ -1,0 +1,30 @@
+uuid: 138dfac2-c329-4205-8309-0c4974dc09eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_section.field_view_one
+    - field.field.paragraph.news_section.field_view_two
+    - paragraphs.paragraphs_type.news_section
+id: paragraph.news_section.default
+targetEntityType: paragraph
+bundle: news_section
+mode: default
+content:
+  field_view_one:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_view_two:
+    weight: 1
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

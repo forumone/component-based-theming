@@ -1,0 +1,19 @@
+uuid: 10b94b1a-c4e2-4f9e-8384-8bc11e78a0a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheading
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.field_subheading
+field_name: field_subheading
+entity_type: paragraph
+bundle: hero
+label: Subheading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

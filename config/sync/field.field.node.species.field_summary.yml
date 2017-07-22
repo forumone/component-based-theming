@@ -1,0 +1,19 @@
+uuid: a32ec05d-246c-41b0-932a-1c56644884e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.species
+id: node.species.field_summary
+field_name: field_summary
+entity_type: node
+bundle: species
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

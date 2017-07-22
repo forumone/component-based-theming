@@ -1,0 +1,49 @@
+uuid: 44f877d0-fecc-4093-83cf-2ec65f9b777f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.species.field_featured_image
+    - field.field.node.species.field_page_content
+    - field.field.node.species.field_published
+    - field.field.node.species.field_summary
+    - node.type.species
+  module:
+    - datetime
+    - user
+id: node.species.teaser
+targetEntityType: node
+bundle: species
+mode: teaser
+content:
+  field_featured_image:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+  field_published:
+    type: datetime_custom
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'F d, Y'
+    third_party_settings: {  }
+  title:
+    type: string
+    settings:
+      link_to_entity: false
+    weight: 2
+    label: hidden
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_page_content: true
+  field_summary: true
+  links: true

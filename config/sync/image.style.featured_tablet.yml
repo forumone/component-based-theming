@@ -1,0 +1,14 @@
+uuid: fe40f0f5-c679-4281-aeae-03096c83c17f
+langcode: en
+status: true
+dependencies: {  }
+name: featured_tablet
+label: 'Featured (780x780) Tablet'
+effects:
+  8a1f4833-00f3-4ec3-8717-ac42a72c2331:
+    uuid: 8a1f4833-00f3-4ec3-8717-ac42a72c2331
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 780
+      height: 780

@@ -1,0 +1,14 @@
+uuid: e33a355c-7af4-4e5f-b878-a2f301a1e236
+langcode: en
+status: true
+dependencies: {  }
+name: teaser
+label: 'Teaser (140x105)'
+effects:
+  34ba32bb-5593-40a1-9328-82fe25ddd346:
+    uuid: 34ba32bb-5593-40a1-9328-82fe25ddd346
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 140
+      height: 105

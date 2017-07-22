@@ -1,0 +1,71 @@
+uuid: 2e509477-efa0-44ec-a6c1-6cf1fb391cc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_background_image
+    - field.field.paragraph.hero.field_button_label
+    - field.field.paragraph.hero.field_button_url
+    - field.field.paragraph.hero.field_heading
+    - field.field.paragraph.hero.field_subheading
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - link
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_background_image:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'Hero Image'
+      label_plural: 'Hero Image'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: image_browser
+    type: inline_entity_form_complex
+    region: content
+  field_button_label:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_button_url:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subheading:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

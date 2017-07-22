@@ -1,0 +1,13 @@
+uuid: 2ad4babf-0378-4238-926b-6ac95b9c3f67
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.landing_type
+id: taxonomy_term.landing_type.default
+targetEntityType: taxonomy_term
+bundle: landing_type
+mode: default
+content: {  }
+hidden:
+  description: true

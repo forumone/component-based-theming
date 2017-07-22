@@ -1,0 +1,28 @@
+uuid: f8c31075-27fe-4ced-a43e-32ba8d3f3d7e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landing_type
+    - node.type.landing
+    - taxonomy.vocabulary.landing_type
+id: node.landing.field_landing_type
+field_name: field_landing_type
+entity_type: node
+bundle: landing
+label: 'Landing type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      landing_type: landing_type
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

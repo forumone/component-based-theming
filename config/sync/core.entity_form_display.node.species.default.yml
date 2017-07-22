@@ -1,0 +1,81 @@
+uuid: 37d301ba-c548-493d-8291-8014e4405492
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.species.field_featured_image
+    - field.field.node.species.field_page_content
+    - field.field.node.species.field_published
+    - field.field.node.species.field_summary
+    - node.type.species
+  module:
+    - datetime
+    - entity_browser_entity_form
+    - inline_entity_form
+    - paragraphs
+    - path
+id: node.species.default
+targetEntityType: node
+bundle: species
+mode: default
+content:
+  field_featured_image:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Image
+      label_plural: Image
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: image_browser
+    type: inline_entity_form_complex
+    region: content
+  field_page_content:
+    type: paragraphs
+    weight: 4
+    settings:
+      title: Content
+      title_plural: Content
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings: {  }
+    region: content
+  field_published:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_summary:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  path:
+    type: path
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

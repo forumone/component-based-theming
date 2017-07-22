@@ -1,0 +1,29 @@
+uuid: d1cea9f9-b9b9-43fa-a5aa-986f274a8120
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_section.field_view_one
+    - field.field.paragraph.news_section.field_view_two
+    - paragraphs.paragraphs_type.news_section
+id: paragraph.news_section.default
+targetEntityType: paragraph
+bundle: news_section
+mode: default
+content:
+  field_view_one:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_view_two:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

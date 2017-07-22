@@ -1,0 +1,23 @@
+uuid: 8b1adeda-0c31-4a1d-b922-b0856f6a67a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_two
+    - paragraphs.paragraphs_type.news_section
+id: paragraph.news_section.field_view_two
+field_name: field_view_two
+entity_type: paragraph
+bundle: news_section
+label: 'View Two'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

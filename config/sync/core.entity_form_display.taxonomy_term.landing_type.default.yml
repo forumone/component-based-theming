@@ -1,0 +1,22 @@
+uuid: 2ef57561-44e1-4561-8bcf-e36bc426a29a
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.landing_type
+id: taxonomy_term.landing_type.default
+targetEntityType: taxonomy_term
+bundle: landing_type
+mode: default
+content:
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
