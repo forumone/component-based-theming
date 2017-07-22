@@ -8,7 +8,7 @@ Please ensure that you follow the directions outlined below to install and confi
 
 Below is a list of requirements that will ensure you get the most out of the training.
 
-----------
+
 ## Requirements
 - Administrative rights to install and configure various applications
 - Acquia Dev Desktop
@@ -18,25 +18,26 @@ Below is a list of requirements that will ensure you get the most out of the tra
 - Grunt
 - Git
 
-**Administrative rights**
+
+### Administrative rights
 You will need to ensure that you have administrative rights to install, configure or manage file permissions to install the required software needed to follow along in class.  Bellow is a list of everything that needs to be installed.  On top of that there will be instances where we may need to modify a file setting in Drupal that will require administrative rights.
 
 If you do not have administrative rights, in the case of using a work laptop, then please have your company install the following items for you.
 
 
-**Acquia Dev Desktop**
-To eliminate the need for various setups that may involve different ***AMP** (Apache/MySQL/PHP) stacks we will be using Acquia Dev Desktop to work with PHP, MySQL and Drupal.  We can download and install Dev Desktop for both Windows and MAC by navigating to the [download](https://dev.acquia.com/downloads) page and following the install prompts for our operating system.
+### Acquia Dev Desktop
+To eliminate the need for various setups that may involve different **AMP** (Apache/MySQL/PHP) stacks we will be using Acquia Dev Desktop to work with PHP, MySQL and Drupal.  We can download and install Dev Desktop for both Windows and MAC by navigating to the [download](https://dev.acquia.com/downloads) page and following the install prompts for our operating system.
 
 Once complete we will revisit how to use Acquia Dev Desktop to import a Drupal 8 website as well as how to import database snapshots that we will use throughout the training.
 
 
-**Terminal**
+### Terminal
 The terminal is an interface in which we can type and execute text based commands.  It can be much faster to complete some tasks using a Terminal than with graphical applications and menus. The remaining requirements will all be ran from a Terminal using a series of command line prompts.  Take a moment to ensure that we have a Terminal (MAC) or Command Prompt (Windows) available to use.
 
 We will be using the terminal window to work with `Composer`, `NPM`, `Grunt` and `Git` throughout the training.  It is important to be comfortable using the command line as it should be part of our daily Front End development workflow.
 
 
-**Composer**
+### Composer
 Composer (https://getcomposer.org/) is a dependency manager for PHP that allows us to perform a multitude of tasks; everything from creating a Drupal project to declaring libraries and even installing contributed modules, just to name a few. The advantage of using Composer is that it allows us to quickly install and update dependencies by simply running a few commands from a terminal window.
 
 
@@ -64,7 +65,7 @@ To verify Composer is working we should be able to open a terminal window and en
 > Save the file and then open the console from within Acquia Dev Desktop.  You can now run the `composer` command within the console window to see a list of available Composer commands.
 
 
-**Node & NPM**
+### Node & NPM
 [Node](https://nodejs.org/en/) is a cross platform runtime environment for creating server side and networking applications. Javascript running outside the browser. [NPM](https://www.npmjs.com/) is the package manager for JavaScript used to install, share, and distribute code and is used to manage dependencies in projects.
 
 
@@ -78,7 +79,7 @@ We can validate that both are installed by running the following commands in the
     node -v
     npm -v
 
-**Grunt**
+### Grunt
 [Grunt](https://gruntjs.com/) is a JavaScript task runner that allows us to perform repetitive tasks like minification, compilation, unit testing, linting and more. We use `Grunt` to compile Sass, Pattern Lab and watch for file changes during development.
 
 We can use `npm` to globally install `grunt` by using the following command in the terminal window:
@@ -86,7 +87,7 @@ We can use `npm` to globally install `grunt` by using the following command in t
 
     npm install -g grunt-cli
 
-**Git**
+### Git
 [Git](https://git-scm.com/) is probably the most popular open source software available to manage source code. Git allows us to distribute code to ourselves or other developers and provides a robust mechanism for tracking changes, creating branches, and staging changes to software, or in our case, web projects.
 
 We can install `Git` by following the directions on the [download](https://git-scm.com/downloads) page and using on the installers for our current operating system.
@@ -100,13 +101,10 @@ We can validate that `Git` is installed properly by running the following comman
      which git
 
 
-> Git for Windows provides a BASH emulation used to run Git from the command line. *NIX users should feel right at home, as the BASH emulation behaves just like the `git` command in LINUX and UNIX environments.
-
+> Git for Windows provides a BASH emulation used to run Git from the command line. _NIX users should feel right at home, as the BASH emulation behaves just like the `git` command in LINUX and UNIX environments._
 
 
 ## Cloning the training files
-----------
-
 Now that we have all the necessary requirements out of the way we can proceed to cloning a copy of the training files located within the Master branch. We will be using the `Terminal` window and `Git` during different exercises to make sure everyone is at the same starting point.
 
 Begin by opening a terminal window and navigating to a location on our laptop where we will be working from. The location does not matter but for sake of demonstration, I will be using a folder called **Sandbox**. To change into this directory we will enter the following command within the terminal window:
@@ -134,8 +132,6 @@ Finally we will want to change into the component-based-theming folder by enteri
 
 
 ## Using Composer to install Drupal
-----------
-
 Currently we have the skeleton of a Drupal 8 project.  The main reason for using a Composer based workflow recommended by Drupal is to ensure that our codebase or repository contains minimal artifacts or files.  In fact if we take a quick look at the folder structure we will see the following:
 
 - **config/sync** : Configuration files that we can use to manage Drupal instances
@@ -158,8 +154,6 @@ Once composer is done running, we now have a fully installed Drupal 8 project.
 
 
 ## Importing our project into Acquia Dev Desktop
-----------
-
 Now that we have a Drupal 8 project we can use Acquia Dev Desktop to import an existing Drupal 8 site into our self-contained environment by following these steps:
 
 **Step One**
@@ -190,8 +184,6 @@ We can now preview our Drupal 8 website by either selecting the URL next to Loca
 
 
 ## Congratulations
-----------
-
 We now have a Drupal 8 project titled Pacific Whale Conservancy that we will be using throughout the remaining training.  This Drupal 8 instance is configured with the latest best practices in mind for site building.  This includes use of the Media module, Paragraphs, various Twig modules and the Component and UI Libraries modules.
 
 This training does not cover site building but we will briefly discuss various decision made when implementing a component-based theme using Twig and Pattern Lab.
