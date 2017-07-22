@@ -1,0 +1,37 @@
+// @file
+// Font Type Locks
+@import "rem";
+
+
+@mixin font-typelock(
+  $min-fs: 36px,
+  $max-fs: 70px,
+  $min-lh: 1.2em,
+  $max-lh: 1.4em,
+  $bp-range-small: 20em,
+  $bp-range-large: 60em
+  ) {
+
+  $font-delta : strip-units(($max-fs - $min-fs) / 16);
+  $lh-delta : strip-units($max-lh - $min-lh);
+  $min-fs-rem : rem($min-fs);
+  $x1 : strip-units($bp-range-small) * 1rem;
+  $x2 : strip-units($bp-range-large) * 1rem;
+
+
+  //Mobile
+  font-size: $min-fs-rem;
+    line-height: calc( #{$min-lh} + #{$lh-delta} * 1em );
+
+  //Small BP
+  @include breakpoint($bp-range-small) {
+    font-size: calc(#{$min-fs-rem} + #{$font-delta} * (100vw - #{$x1}) / (#{strip-units($bp-range-large)} - #{strip-units($bp-range-small)}));
+     line-height: calc( 1.2em + 0.2 * (100vw - #{$x2}) / (#{strip-units($bp-range-small)} - #{strip-units($bp-range-large)}) );
+  }
+
+  //Large BP
+  @include breakpoint($bp-range-large) {
+    font-size: calc(#{$min-fs-rem} + #{$font-delta} * 1rem);
+    line-height: $min-lh;
+  }
+}

@@ -1,0 +1,19 @@
+{% if wrapper != false %}
+  <section class="block {{ modifier_class }}">
+{% endif %}
+
+  {% if constrain %}
+    <div class="l-constrain">
+  {% endif %}
+
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+
+  {% if constrain %}
+    </div>
+  {% endif %}
+
+{% if wrapper != false %}
+  </section>
+{% endif %}

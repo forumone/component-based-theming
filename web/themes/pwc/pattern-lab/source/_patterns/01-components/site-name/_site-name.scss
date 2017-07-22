@@ -1,0 +1,28 @@
+// @file
+// Styles for the site name.
+
+.site-name {
+  @include image-replace(270px, 100px);
+  @include svg-background('logo-pwc-short');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+
+  .header & {
+    @include breakpoint(1000px) {
+      @include image-replace(460px, 100px);
+      @include svg-background('logo-pwc-long');
+      background-position: -10px center;
+    }
+  }
+
+  .footer & {
+    @include svg-background('logo-pwc-footer');
+    left: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}

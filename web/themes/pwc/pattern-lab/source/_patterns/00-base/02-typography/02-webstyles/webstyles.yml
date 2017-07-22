@@ -1,0 +1,171 @@
+webstyles:
+-
+  meta:
+    title: "Heading 1"
+    spec:
+      color: "#000000"
+      background: "#FFFFFF"
+      font: "Oswald"
+      size: "40px"
+      line_height: "1.3"
+      weight: "700"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Oswald', sans-serif; font-size: 40px; line-height: 1.3; font-weight: 700; color: #000000;"
+      text: "Heading 1"
+    colors:
+      hex: "#000000"
+      style: "background: #000000;"
+-
+  meta:
+    title: "Heading 2"
+    spec:
+      color: "#000000"
+      background: "#FFFFFF"
+      font: "Oswald"
+      size: "30px"
+      line_height: "1.3"
+      weight: "700"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Oswald', sans-serif; font-size: 30px; line-height: 1.3; font-weight: 700; color: #000000;"
+      text: "Heading 2"
+    colors:
+      hex: "#000000"
+      style: "background: #000000;"
+-
+  meta:
+    title: "Heading 3"
+    spec:
+      color: "#000000"
+      background: "#FFFFFF"
+      font: "Oswald"
+      size: "20px"
+      line_height: "1.3"
+      weight: "700"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Oswald', sans-serif; font-size: 20px; line-height: 1.3; font-weight: 700; color: #000000;"
+      text: "Heading 3"
+    colors:
+      hex: "#000000"
+      style: "background: #000000;"
+-
+  meta:
+    title: "Heading 4"
+    spec:
+      color: "#000000"
+      background: "#FFFFFF"
+      font: "Oswald"
+      size: "15px"
+      line_height: "1.3"
+      weight: "700"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Oswald', sans-serif; font-size: 15px; line-height: 1.3; font-weight: 700; color: #000000;"
+      text: "Heading 4"
+    colors:
+      hex: "#000000"
+      style: "background: #000000;"
+-
+  meta:
+    title: "Heading 5"
+    spec:
+      color: "#000000"
+      background: "#FFFFFF"
+      font: "Oswald"
+      size: "13px"
+      line_height: "1.3"
+      weight: "700"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Oswald', sans-serif; font-size: 13px; line-height: 1.3; font-weight: 700; color: #000000;"
+      text: "Heading 5"
+    colors:
+      hex: "#000000"
+      style: "background: #000000;"
+-
+  meta:
+    title: "Heading 6"
+    spec:
+      color: "#000000"
+      background: "#FFFFFF"
+      font: "Oswald"
+      size: "11px"
+      line_height: "1.3"
+      weight: "400"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Oswald', sans-serif; font-size: 11px; line-height: 1.3; font-weight: 400; text-transform: uppercase; color: #000000;"
+      text: "Heading 6"
+    colors:
+      hex: "#000000"
+      style: "background: #000000;"
+-
+  meta:
+    title: "Section Landing Title"
+    spec:
+      color: "#999999"
+      background: "#FFFFFF"
+      font: "Oswald"
+      size: "3.75em"
+      line_height: "1"
+      weight: "600"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Oswald', sans-serif; font-size: 3.75em; line-height: 1; font-weight: 600; color: #999999; text-transform: uppercase;"
+      text: "Section Landing Title"
+    colors:
+      hex: "#999999"
+      style: "background: #999999;"
+-
+  meta:
+    title: "Card Title"
+    spec:
+      color: "#0071bc"
+      background: "#FFFFFF"
+      font: "Oswald"
+      size: "1.25rem"
+      line_height: "1.2"
+      weight: "400"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Oswald', sans-serif; font-size: 1.25rem; line-height: 1.2; font-weight: 400; color: #0071bc;"
+      text: "Card Title"
+    colors:
+      hex: "#0071bc"
+      style: "background: #0071bc;"
+-
+  meta:
+    title: "Teaser Title"
+    spec:
+      color: "#0071bc"
+      background: "#FFFFFF"
+      font: "Source Sans Pro"
+      size: "1.0625em"
+      line_height: "1.3"
+      weight: "600"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Source Sans Pro', sans-serif; font-size: 1.0625em; line-height: 1.3; font-weight: 600; color: #0071bc;"
+      text: "Teaser Title"
+    colors:
+      hex: "#0071bc"
+      style: "background: #0071bc;"
+-
+  meta:
+    title: "Body Copy"
+    spec:
+      color: "#212121"
+      background: "#FFFFFF"
+      font: "Source Sans Pro"
+      size: "16px"
+      line_height: "1.5"
+      weight: "400"
+    preview:
+      background: "background: #FFFFFF;"
+      style: "font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5; font-weight: 400; color: #212121;"
+      text: "<h1>Body copy</h1><p>All paragraphs are wrapped in p tags. Additionally, p elements can be wrapped with a blockquote element if the p element is indeed a quote. Historically, blockquote has been used purely to force indents, but this is now achieved using CSS. Reserve blockquote for quotes.</p>"
+    colors:
+      hex: "#212121"
+      style: "background: #FFFFFF;"

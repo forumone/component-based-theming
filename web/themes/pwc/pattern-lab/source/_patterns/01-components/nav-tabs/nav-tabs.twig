@@ -1,0 +1,20 @@
+<nav class="nav-tabs" role="navigation">
+  {% if heading %}
+    <h2 class="visually-hidden">{{ heading|raw }}</h2>
+  {% endif %}
+  <ul class="nav {{ modifier_class }}">
+    {% for tab in tabs %}
+      {% set activeClass = tab.active ? 'is-active' : '' %}
+      <li class="nav__item {{ activeClass }}">
+        {% block link %}
+          <a href="{{ tab.url }}" class="nav__link {{ activeClass }}">
+            {{ tab.text }}
+            {% if tab.active %}
+              <span class="visually-hidden">{{ activeLabel|default('(active tab)') }}</span>
+            {% endif %}
+          </a>
+        {% endblock link %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

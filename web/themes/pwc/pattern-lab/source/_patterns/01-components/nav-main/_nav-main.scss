@@ -1,0 +1,102 @@
+// @file
+// Styles for the main menu.
+
+.nav-main {
+  .nav--menu {
+    background: $color-white;
+    display: none;
+    height: 100vh;
+    left: 0;
+    margin: 0;
+    min-height: 100vh;
+    padding: 1em;
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    z-index: 10;
+
+    @media print {
+      display: none;
+    }
+
+    @include breakpoint($bp-tablet) {
+      align-items: center;
+      background: transparent;
+      display: flex;
+      height: inherit;
+      min-height: inherit;
+      padding: 0;
+      position: relative;
+      top: 0;
+    }
+
+    .nav__item {
+      font-size: $font-size-lg;
+      text-transform: uppercase;
+
+      @include breakpoint($bp-tablet) {
+        font-size: $font-size-md;
+        padding-right: 30px;
+        position: relative;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+
+    .nav__link {
+      border-bottom: 3px solid transparent;
+      color: $color-white;
+      font-family: $header-font-family;
+      font-size: em(16px);
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &:focus,
+      &:hover {
+        border-color: $color-white;
+      }
+
+      @include breakpoint($bp-tablet) {
+        font-size: em(24px);
+      }
+    }
+  }
+}
+
+.nav__trigger {
+  left: -9999px;
+  position: absolute;
+  top: -9999px;
+
+  &:checked ~ ul {
+  	display:block;
+
+    @include breakpoint($bp-tablet) {
+      display: flex;
+      flex-direction: row;
+    }
+	}
+}
+
+.nav__label {
+  background: $color-orange;
+  color: $color-white;
+  cursor: pointer;
+  display: block;
+  font-size: 1.1em;
+  line-height: 2em;
+  margin: 0;
+  min-height: 55px;
+  padding: .45em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: uppercase;
+
+  @include breakpoint($bp-tablet) {
+    display: none;
+  }
+
+}

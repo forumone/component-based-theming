@@ -1,0 +1,50 @@
+colors:
+-
+  color_set:
+    -
+      swatch: "swatch swatch-light"
+      style: "background-color: #e4e7ee;"
+      variable: "SCSS $color-gray-lighter"
+      hex: "HEX #e4e7ee"
+    -
+      swatch: "swatch"
+      style: "background-color: #c2c9d4;"
+      variable: "SCSS $color-gray-light"
+      hex: "HEX #c2c9d4"
+    -
+      swatch: "swatch"
+      style: "background-color: #7f919e;"
+      variable: "SCSS $color-gray"
+      hex: "HEX #7f919e"
+    -
+      swatch: "swatch"
+      style: "background-color: #546673;"
+      variable: "SCSS $color-gray-dark"
+      hex: "HEX #546673"
+    -
+      swatch: "swatch"
+      style: "background-color: #353a3d;"
+      variable: "SCSS $color-gray-darker"
+      hex: "HEX #353a3d"
+-
+  color_set:
+    -
+      swatch: "swatch"
+      style: "background-color: #003a54;"
+      variable: "SCSS $color-midnight"
+      hex: "HEX #003a54"
+    -
+      swatch: "swatch"
+      style: "background-color: #004259;"
+      variable: "SCSS $color-marine"
+      hex: "HEX #004259"
+    -
+      swatch: "swatch"
+      style: "background-color: #54c5d0;"
+      variable: "SCSS $color-aqua"
+      hex: "HEX #54c5d0"
+    -
+      swatch: "swatch"
+      style: "background-color: #f67a0c;"
+      variable: "SCSS $color-orange"
+      hex: "HEX #f67a0c"

@@ -1,0 +1,15 @@
+<nav class="nav-main" role="navigation">
+  <h2 class="visually-hidden block__title">Main menu</h2>
+  <input class="nav__trigger" type="checkbox" id="NavButton">
+	<label class="nav__label" for="NavButton" onclick>Menu</label>
+  {% spaceless %}
+  {% block content %}
+    <ul class="nav nav--menu">
+      <li class="nav__item"><a class="nav__link" href="#">Who we are</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Species</a></li>
+      <li class="nav__item"><a class="nav__link" href="#">Our waters</a></li>
+      <li class="nav__item"><a class="nav__link nav__link--button" href="#">Donate</a></li>
+    </ul>
+  {% endblock %}
+  {% endspaceless %}
+</nav>

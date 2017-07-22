@@ -1,0 +1,13 @@
+items:
+-
+  button_icon: "button--icon__rss"
+  button_label: "RSS"
+  button_url: "#"
+-
+  button_icon: "button--icon__email"
+  button_label: "Email"
+  button_url: "#"
+-
+  button_icon: "button--icon__youtube"
+  button_label: "YouTube"
+  button_url: "#"

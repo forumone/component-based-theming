@@ -1,0 +1,7 @@
+// @file
+// Strip Unites from number
+
+//Strip Units
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}

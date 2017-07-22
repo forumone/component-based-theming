@@ -1,0 +1,24 @@
+<div class="webstyles">
+  {% for webstyle in webstyles %}
+  <div class="webstyle">
+    <div class="webstyle-meta">
+        <h4 class="meta-title">{{ webstyle.meta.title }}</h4>
+        <span class="spec meta-color"><span class="key">Text Color</span><span class="value"><i style="background: {{ webstyle.meta.spec.color }};"></i><span>{{ webstyle.meta.spec.color }}</span></span></span>
+        <span class="spec meta-background"><span class="key">Background</span><span class="value"><i></i><span>{{ webstyle.meta.spec.background }}</span></span></span>
+        <span class="spec"><span class="key">Font</span><span class="value">{{ webstyle.meta.spec.font }}</span></span>
+        <span class="spec"><span class="key">Size</span><span class="value">{{ webstyle.meta.spec.size }}</span></span>
+        <span class="spec"><span class="key">Line Height</span><span class="value">{{ webstyle.meta.spec.line_height }}</span></span>
+        <span class="spec"><span class="key">Weight</span><span class="value">{{ webstyle.meta.spec.weight }}</span></span>
+    </div>
+    <div class="webstyle-preview" style="{{ webstyle.meta.preview.background }}">
+      <span class="meta-preview" style="{{ webstyle.meta.preview.style }}">{{ webstyle.meta.preview.text|raw }}</span>
+    </div>
+    <div class="webstyle-colors">
+      <h5 class="meta-title">Text Colors</h5>
+      <ul class="meta-foreground">
+        <li class="meta-color" data-hex="{{ webstyle.meta.colors.hex }}" style="{{ webstyle.meta.colors.style }}"></li>
+      </ul>
+    </div>
+  </div>
+  {% endfor %}
+</div>
