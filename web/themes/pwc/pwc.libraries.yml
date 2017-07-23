@@ -12,17 +12,11 @@ global:
     - core/drupalSettings
     - core/modernizr
 
-messages:
-  version: VERSION
+fonts:
+  version: VERISON
   css:
     theme:
-      css/messages.css: {}
-
-pager:
-  version: VERSION
-  css:
-    theme:
-      css/pager.css: {}
+      '//fonts.googleapis.com/css?family=Oswald:400,600,700|Source+Sans+Pro:400,600': { type: external, minified: true }
 
 progress:
   version: VERSION

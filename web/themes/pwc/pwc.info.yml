@@ -1,12 +1,13 @@
-name: Pacific Whale Conservancy
+name: PWC
 type: theme
-description: 'Drupal 8 Theme'
+description: 'Pacific Whale Conservancy - Drupal 8 Theme'
 package: Core
 core: 8.x
 base theme: stable
 
 libraries:
-  - gesso/global
+  - pwc/fonts
+  - pwc/global
 
 libraries-override:
   core/drupal.dropbutton:
@@ -40,14 +41,11 @@ libraries-override:
 regions:
   page_top: 'Page top'
   header: Header
-  navigation: Navigation
   breadcrumb: Breadcrumb
   help: Help
   highlighted: Highlighted
-  preface: Preface
-  sidebar_first: 'Sidebar first'
-  sidebar_second: 'Sidebar second'
   content: Content
-  postscript: Postscript
-  footer: Footer
+  footer_top: 'Footer Top'
+  footer_bottom: 'Footer Bottom'
+  disabled: 'Disabled'
   page_bottom: 'Page bottom'
