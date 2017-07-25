@@ -41,7 +41,7 @@ We will be using the terminal window to work with `Composer`, `NPM`, `Grunt` and
 Composer (https://getcomposer.org/) is a dependency manager for PHP that allows us to perform a multitude of tasks; everything from creating a Drupal project to declaring libraries and even installing contributed modules, just to name a few. The advantage of using Composer is that it allows us to quickly install and update dependencies by simply running a few commands from a terminal window.
 
 
-> **MAC** users will need to follow the installation directions found at [https://getcomposer.org/download/](https://getcomposer.org/download/). Take a look at the **Getting Started** documentation that corresponds to OSX.  Once Composer is locally installed, follow these [directions](https://getcomposer.org/doc/00-intro.md#globally) to make Composer globally accessible our operating system.
+> **MAC** users will need to follow the installation directions found at [https://getcomposer.org/download/](https://getcomposer.org/download/). Take a look at the **Getting Started** documentation that corresponds to OSX.  Once Composer is locally installed, follow these [directions](https://getcomposer.org/doc/00-intro.md#globally) to make Composer globally accessible our operating system.  Since Composer is a PHP Package Manager you will need to make sure you have PHP on your laptop.  Acquia Dev Desktop should satisfy this requirement.
 
 
 > **Windows** users can skip manually installing Composer, Acquia Dev Desktop installs it as part of the setup within the tools folder.
@@ -146,6 +146,10 @@ To complete the scaffolding of our Drupal 8 project we will need to open a termi
 
 
     composer install
+
+If the above command returns an error regarding your version of PHP then you can run the following command instead:
+
+    composer install --ignore-platform-reqs
 
 Once composer is done running, we now have a fully installed Drupal 8 project.
 
