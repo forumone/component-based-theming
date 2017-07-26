@@ -1,4 +1,4 @@
-# 02-Tools
+# 03-Components
 
 # Component-based Theming with Twig
 
@@ -8,101 +8,68 @@ This repository is for using a Composer based workflow with Drupal 8.  We will b
 
 This training assumes that you are already running Acquia Dev Desktop and have a familiarity with installing Drupal using the standard means of downloading, setting up a database, configuring a localhost, and completing the browser-based install. In the [Master](https://github.com/forumone/component-based-theming/tree/master#component-based-theming-with-twig) repo, we walked through quickly installing **Acquia Dev Desktop**, **Terminal**, **Composer**, **Node & NPM**, **Grunt**, and **Git**. Ensure that you have a working AMP stack and are comfortable working within the command-line interface using a Terminal window before continuing.
 
-## Lesson Two: Tools
+## Lesson Three: Building Components
 
-The term Front-end developer means so much more than someone who writes HTML, CSS, and JavaScript.  We will take a look at tools such as Composer, PatternLab, NPM and Grunt to help us work smarter when creating a theme in Drupal.  Beginning with using the very accessible Gesso theme to create a workflow that will assist us in creating our first components.
+Reviewing a design we will work thru identifying the components that make up the page and begin building our first components.  Utilizing PatternLab we will first build our component using simple markup, styling, and Twig.  We will learn how to then combine components using advanced Twig syntax to build a completed page.
 
 **Topics covered**
 
-- Working with the Gesso theme
-- Using Composer to create a PatternLab project
-- Choosing a Drupal based Starterkit
-- Working with package managers
-- Using task runners to improve workflow
-- Configuring Drupal for Twig debugging
-- Activating Gesso
-- Previewing Pattern Lab
+- Creating components
+- Managing components within Pattern Lab
+- Using layouts within Pattern Lab
+- Understanding Templates and Pages
 
 
-## Gesso
+## Creating Components
 
-Gesso is a [Sass](http://sass-lang.com/)-based starter theme that outputs accessible HTML5 markup. It uses a mobile-first responsive approach and leverages [SMACSS](https://smacss.com/) to organize styles as outlined in the [Drupal 8 CSS architecture guidelines](https://www.drupal.org/node/1887918). This encourages a component-based approach to theming through the creation of discrete, reusable UI elements. We can clone the `Gesso` repo to our `/web/theme/` folder by running the following command within the terminal window.
+Anytime we begin the process of building components, we must first visualize the design by reviewing the creative files and mapping out how a specific section is built, any commonalities and what if anything can be reused.
 
-
-    cd web/themes
-    git clone git@github.com:forumone/gesso.git gesso
-    cd gesso
-
-Since we are cloning the gesso theme into our git repo we will also want to remove the git file from `gesso` to avoid any issues. Within the terminal window, run the following command:
+Let’s begin with reviewing the [Homepage](https://codepen.io/cchumley/full/PmPPMb/) design that we will be working with.
 
 
-    rm -rf .git
+## Managing components with Pattern Lab
+
+The basic building blocks of a component start with three files.  First is the *.twig file that contains our basic markup.  Second is the *.scss file that contains our styling.  Third is the *.yml file that contains any data attributes that we want to pass to our markup.
+
+### Header
+
+- Site branding
+- Main Menu
+
+### Hero
+
+### Featured
+
+- Card
+
+### Updates
+
+- Listing
+
+### New Species
+
+- Teaser
+
+### Footer
+
+- Site branding
+- Footer menu
 
 
-## Pattern Lab
+## Using Layouts within Pattern Lab
 
-At its core, Pattern Lab is a static site generator (powered by either PHP or Node) that stitches together UI components. But there's a whole lot more to it than that as we will find out once we begin looking at components. We can install Pattern Lab directly into our theme using `composer` to create a Pattern Lab project by entering the following commands within our terminal window.
+### Header
 
+### Featured
 
-    composer create-project pattern-lab/edition-drupal-standard pattern-lab
+### Updates
 
-If prompted, select `r` to overwrite existing `/source/` files.
+### Releases
 
-
-## Forum One starter kit
-
-When prompted, select `forumone/starterkit-twig-drupal-gesso` as the starterkit which is option 4. If prompted, select `r` to overwrite existing `/source/` files.
+### Footer
 
 
-## NPM Packages
-
-Next we will need to use `npm` to install any theme dependencies and packages that both our theme and Pattern Lab will need to build our assets. We can install packages by entering the following command within the terminal window.
-
-
-    npm install
-
-
-## Grunt
-
-Finally we will need to build our assets by entering the following command within the terminal window.
-
-
-    grunt gessoBuild
-
-
-## Enabling Twig Debug
-
-With our theme in place and Pattern Lab working, we now need to configure Drupal for local development. This generally involves modifying the `settings.php` file and creating `settings.local.php` and `local.services.yml` to allow for both disabled caching and to enable Twig debugging.
-
-Anytime we manage settings files we will need to have the proper file permissions.  To make this process a little easier, we have already added the necessary `setting.local.php` and `local.services.yml` file.
-
-Using an editor of your choice, navigate to the `/web/sites/default/` folder and open the file named `local.services.yml`.  Locate the section of code commented with **Enable Twig debugging** and change the `debug: false` value to `debug:  true`.
-
-Next within a terminal window change into the the `/web/` root of our Drupal project and flush the cache by entering the following command:
-
-
-    drush cr
-
-Now that we have rebuilt Drupal’s cache our environment will display Twig comments needed for locating Twig files and any File name suggestions that we can use.
-
-## Activating Gesso
-
-In order to preview the Gesso theme along with Twig comments we need to enable and set Gesso as our Default theme within the Drupal UI.
-
-Begin by navigating to http://pwc.dd:8083/admin/appearance and locate the Gesso theme within the **Uninstalled Themes** section of the UI and follow these steps to activate it:
-
-
-- Select the Install and set as default link next to the Gesso theme
-- Navigate back to http://pwc.dd:8083/ and confirm Gesso is now active
-- Inspect the page and confirm that Twig is now displaying **FILE NAME SUGGESTIONS**
-
-With Gesso now active we can move on to previewing the Pattern Lab instance for our theme.
-
-## Previewing Pattern Lab
-
-Earlier we used Composer to create an instance of Pattern Lab that is confined within our theme. To verify that Pattern Lab is functioning properly we can navigate directly to Pattern Lab within our browser by going to the following url: http://pwc.dd:8083/themes/gesso/pattern-lab/public/
-
-We will be working with Pattern Lab extensively throughout the remaining training.  While we are previewing the default out of the box version of Pattern Lab we will see in our next lesson how we can configure it to work with our Base styling, building components, layouts, templates and pages.
+## Understanding Templates & Pages
 
 ----------
 ## Notes:
