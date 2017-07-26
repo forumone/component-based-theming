@@ -1,0 +1,49 @@
+// @file
+// Page Sections
+
+.section {
+  background-color: $color-white-light;
+}
+
+.section__inner {
+  padding: 2em 0;
+  position: relative;
+
+  @include breakpoint(800px) {
+    padding: 4em 0;
+  }
+}
+
+.section__col {
+  padding: 2em 0;
+  position: relative;
+
+  @include breakpoint(800px) {
+    padding: 4em 0;
+  }
+}
+
+.section__title {
+  color: $color-gray;
+  font-size: em(40px);
+  font-weight: 600;
+  margin-bottom: 0;
+  text-transform: uppercase;
+
+  @include breakpoint(800px) {
+    font-size: em(80px);
+    left: -23px;
+    position: absolute;
+    top: -23px;
+  }
+}
+
+.section--alt {
+  background-color: $color-white;
+
+  .section__title {
+    font-size: 3em;
+    left: 0;
+    top: -12px;
+  }
+}

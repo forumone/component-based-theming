@@ -4,7 +4,7 @@
 .nav-main {
 
   .nav--menu {
-    background: rgba(84, 197, 208, 0.75);
+    background: rgba(84, 197, 208, 0.85);
     display: none;
     height: 100vh;
     left: 0;
@@ -28,6 +28,7 @@
     }
 
     .nav__item {
+      margin-bottom: 0.5rem;
 
       @include breakpoint(800px) {
         padding-right: 24px;
@@ -41,7 +42,7 @@
 
     .nav__link {
       border-bottom: 3px solid transparent;
-      color: $color-midnight;
+      color: $color-white;
       font-family: $header-font-family;
       font-size: em(24px);
       text-decoration: none;
@@ -49,7 +50,8 @@
 
       &:focus,
       &:hover {
-        border-color: $color-midnight;
+        border-color: $color-white;
+        color: $color-white;
       }
 
       @include breakpoint(800px) {

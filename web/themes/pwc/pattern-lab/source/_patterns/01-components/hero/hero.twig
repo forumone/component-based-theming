@@ -1,0 +1,13 @@
+<div class="hero" style="background-image: url({{ hero_image }});">
+  <div class="l-constrain">
+    <div class="hero__content">
+      <h1 class="hero__title">{{ hero_title }}</h1>
+      <div class="hero__text">{{ hero_text|raw }}</div>
+      {% if button_url %}
+        <div class="hero__call-to-action">
+          <a href="{{ button_url }}" class="button button--outline">{{ button_label }}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>

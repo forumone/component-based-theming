@@ -1,0 +1,28 @@
+// @file
+// Styles for teaser.
+
+.teaser {
+  display: flex;
+  margin-bottom: 1.75em;
+}
+
+.teaser__img {
+  align-self: flex-start;
+  flex: 0 0 auto;
+  margin-right: 1em;
+  width: 140px;
+}
+
+.teaser__date {
+  color: $color-gray-light;
+  font-size: em($font-size-sm);
+}
+
+.teaser__heading {
+  font-size: em(17px);
+  font-weight: 600;
+
+  > a {
+    text-decoration: none;
+  }
+}

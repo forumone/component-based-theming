@@ -1,0 +1,67 @@
+// @file
+// Styles for Hero component.
+
+.hero {
+  background-position: 50% 50%;
+  background-size: cover;
+  color: #ffffff;
+  padding: 12vw 1em 8vw;
+  position: relative;
+  text-align: left;
+
+  &::after {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, .85) 0%, rgba(0, 0, 0, .7) 17%, rgba(0, 0, 0, .4) 47%, rgba(0, 0, 0, .2) 75%, rgba(0, 0, 0, .2) 99%);
+    bottom: 0;
+    content: '';
+    left: 0;
+    opacity: .6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  &::before {
+    @include svg-background('hero-curved-overlay');
+    background-position: 56% bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    content: '';
+    height: 53%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+
+  @include breakpoint(800px) {
+    padding-right: 20%;
+  }
+
+  @include breakpoint(1100px) {
+    padding-left: rem(26px);
+    padding-right: 30%;
+  }
+}
+
+.hero__title {
+  @include font-typelock;
+  font-weight: 400;
+  margin-bottom: .25em;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  font-size: rem(18px);
+  margin: 0 0 1rem;
+
+  @include breakpoint(800px) {
+    font-size: rem(20px);
+  }
+}

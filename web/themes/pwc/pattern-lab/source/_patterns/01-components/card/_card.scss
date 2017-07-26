@@ -1,0 +1,36 @@
+// @file
+// Card Syle
+
+$card-padding: rem(18px);
+
+.card {
+  background-color: $color-white;
+  box-shadow: 0 0 10px rgba($color-text-primary, .22);
+}
+
+.card__media {
+
+}
+
+.card__body {
+  padding: 1.125rem;
+}
+
+.card__date {
+  color: $color-gray-light;
+  font-size: em($font-size-sm);
+}
+
+.card__heading {
+  font-size: rem(20px);
+  font-weight: 400;
+  line-height: 1.2;
+
+  > a {
+    text-decoration: none;
+  }
+}
+
+.card__teaser {
+
+}
