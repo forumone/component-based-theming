@@ -50,4 +50,5 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_page_content: true
   links: true
