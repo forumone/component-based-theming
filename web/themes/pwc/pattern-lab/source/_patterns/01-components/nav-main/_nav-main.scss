@@ -2,8 +2,9 @@
 // Styles for the main menu.
 
 .nav-main {
+
   .nav--menu {
-    background: $color-white;
+    background: rgba(84, 197, 208, 0.75);
     display: none;
     height: 100vh;
     left: 0;
@@ -11,15 +12,11 @@
     min-height: 100vh;
     padding: 1em;
     position: absolute;
-    top: 55px;
+    top: 70px;
     width: 100%;
     z-index: 10;
 
-    @media print {
-      display: none;
-    }
-
-    @include breakpoint($bp-tablet) {
+    @include breakpoint(800px) {
       align-items: center;
       background: transparent;
       display: flex;
@@ -31,12 +28,9 @@
     }
 
     .nav__item {
-      font-size: $font-size-lg;
-      text-transform: uppercase;
 
-      @include breakpoint($bp-tablet) {
-        font-size: $font-size-md;
-        padding-right: 30px;
+      @include breakpoint(800px) {
+        padding-right: 24px;
         position: relative;
 
         &:last-child {
@@ -47,19 +41,24 @@
 
     .nav__link {
       border-bottom: 3px solid transparent;
-      color: $color-white;
+      color: $color-midnight;
       font-family: $header-font-family;
-      font-size: em(16px);
+      font-size: em(24px);
       text-decoration: none;
       text-transform: uppercase;
 
       &:focus,
       &:hover {
-        border-color: $color-white;
+        border-color: $color-midnight;
       }
 
-      @include breakpoint($bp-tablet) {
-        font-size: em(24px);
+      @include breakpoint(800px) {
+        color: $color-white;
+
+        &:focus,
+        &:hover {
+          border-color: $color-white;
+        }
       }
     }
   }
@@ -73,7 +72,7 @@
   &:checked ~ ul {
   	display:block;
 
-    @include breakpoint($bp-tablet) {
+    @include breakpoint(800px) {
       display: flex;
       flex-direction: row;
     }
@@ -86,17 +85,34 @@
   cursor: pointer;
   display: block;
   font-size: 1.1em;
-  line-height: 2em;
+  line-height: 3em;
   margin: 0;
-  min-height: 55px;
+  min-height: 70px;
   padding: .45em;
   position: absolute;
   right: 0;
   top: 0;
   text-transform: uppercase;
 
-  @include breakpoint($bp-tablet) {
+  @include breakpoint(800px) {
     display: none;
   }
 
+}
+
+.nav__link--button {
+
+  @include breakpoint(800px) {
+    @include button();
+    background-color: $color-orange;
+    border: 2px solid $color-white !important;
+    border-radius: 0;
+    font-weight: 600;
+    margin-bottom: 0;
+
+    &:focus,
+    &:hover {
+      background-color: $color-orange-dark;
+    }
+  }
 }

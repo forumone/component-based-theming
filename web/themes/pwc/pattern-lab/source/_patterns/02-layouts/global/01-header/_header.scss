@@ -2,5 +2,13 @@
 // Styles for Global Header
 
 .header {
+  background-color: $color-marine;
+  color: $color-white;
   position: relative;
+}
+
+.header__grid {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }

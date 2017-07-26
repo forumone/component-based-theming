@@ -4,3 +4,20 @@
 .footer {
 
 }
+
+.footer__top {
+  @include svg-background('hero-curved-overlay');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: rem(200px);
+  position: relative;
+}
+
+.footer__bottom {
+  background-color: $color-marine;
+
+  @include breakpoint(800px) {
+    height: rem(75px);
+  }
+}

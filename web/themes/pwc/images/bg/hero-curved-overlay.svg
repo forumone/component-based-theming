@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3309px" height="241px" viewBox="0 0 3309 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>hero-curved-overlay</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero-curved-overlay" transform="translate(1664.500000, 120.500000) scale(-1, 1) translate(-1664.500000, -120.500000) " fill-rule="nonzero">
+            <path d="M1997.74,76.94 C1800.15,116.61 1616.8,173.3 1456.32,241 L3328.16,241 C3137.18,31.39 2597.69,-43.51 1997.74,76.94 Z" id="Shape" fill="#B1E4E3" opacity="0.7"></path>
+            <path d="M992,0 C603.23,0 255,93.47 20,241 L1963.94,241 C1729,93.47 1380.71,0 992,0 Z" id="Shape" fill="#008D9B" opacity="0.62"></path>
+        </g>
+    </g>
+</svg>

@@ -2,9 +2,9 @@
 // Styles for the site name.
 
 .site-name {
-  @include image-replace(270px, 100px);
+  @include image-replace(210px, 70px);
   @include svg-background('logo-pwc-short');
-  background-position: center;
+  background-position: -8px center;
   background-repeat: no-repeat;
   background-size: contain;
   display: block;
@@ -18,11 +18,15 @@
   }
 
   .footer & {
-    @include svg-background('logo-pwc-footer');
-    left: 1em;
+    @include svg-background('logo-pwc-short');
+    bottom: 15px;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+
+    @include breakpoint(1000px) {
+      @include image-replace(270px, 84px);
+      @include svg-background('logo-pwc-footer');
+      background-position: 0 center;
+    }
   }
 
 }

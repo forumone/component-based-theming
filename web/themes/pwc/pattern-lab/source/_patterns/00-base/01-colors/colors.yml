@@ -48,3 +48,8 @@ colors:
       style: "background-color: #f67a0c;"
       variable: "SCSS $color-orange"
       hex: "HEX #f67a0c"
+    -
+      swatch: "swatch"
+      style: "background-color: #c86207;"
+      variable: "SCSS $color-orange-dark"
+      hex: "HEX #c86207"
