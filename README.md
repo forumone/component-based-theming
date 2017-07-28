@@ -24,12 +24,14 @@ Reviewing a design we will work thru identifying the components that make up the
 
 Anytime we begin the process of building components, we must first visualize the design by reviewing the creative files and mapping out how a specific section is built, any commonalities and what if anything can be reused.
 
-Let’s begin with reviewing the [Homepage](https://codepen.io/cchumley/full/PmPPMb/) design that we will be working with.
+Let’s begin with reviewing the [Homepage](https://codepen.io/cchumley/full/KvpoqV/) design that we will be working with.
 
 
 ## Managing components with Pattern Lab
 
-The basic building blocks of a component start with three files.  First is the *.twig file that contains our basic markup.  Second is the *.scss file that contains our styling.  Third is the *.yml file that contains any data attributes that we want to pass to our markup.
+The basic building blocks of a component start with three files.  First is the `*.twig` file that contains our basic markup.  Second is the `*.scss` file that contains our styling.  Third is the `*.yml` file that contains any data attributes that we want to pass to our markup.
+
+We will explore the following page design and discuss how each component is developed and how to iterate on each component to make it more robust by taking advantage of Twig variables to replace static content with dynamic content.
 
 ### Header
 

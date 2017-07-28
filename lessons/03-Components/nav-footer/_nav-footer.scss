@@ -1,0 +1,38 @@
+// @file
+// Footer Nav
+
+.nav-footer {
+
+  .nav--menu {
+    padding: 1em 0;
+    text-align: center;
+
+    @include breakpoint(800px) {
+      align-items: center;
+      display: flex;
+      height: rem(75px);
+      justify-content: flex-end;
+    }
+
+    .nav__item {
+
+      @include breakpoint(800px) {
+        padding-right: 24px;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .nav__link {
+      border-bottom: 1px solid transparent;
+      color: $color-white;
+      font-size: em($font-size-sm);
+      text-decoration: none;
+      &:hover, &:focus {
+        border-color: #fff;
+      }
+    }
+  }
+}

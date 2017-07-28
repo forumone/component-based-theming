@@ -1,0 +1,21 @@
+// @file
+// Styles for Listing component.
+
+.listing {
+  margin-bottom: 1em;
+}
+
+.listing__date {
+  color: $color-gray-light;
+  font-size: em($font-size-sm);
+}
+
+.listing__heading {
+  font-family: $base-font-family;
+  font-size: em(17px);
+  font-weight: 600;
+
+  > a {
+   text-decoration: none;
+  }
+}
