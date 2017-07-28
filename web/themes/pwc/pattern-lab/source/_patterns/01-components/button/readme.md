@@ -9,7 +9,9 @@ Creating a component is actually quite easy.  All that we need is a twig templat
 - Add the following markup:
 
 
-```<a href="#" class="button">Learn More</a>
+```html
+    <a href="#" class="button">Learn More</a>
+```
 
 - Save the file
 - Refresh browser and navigate to http://pwc.dd:8083/themes/pwc/pattern-lab/public/?p=components-button to view our component
