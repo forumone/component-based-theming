@@ -9,8 +9,7 @@ Creating a component is actually quite easy.  All that we need is a twig templat
 - Add the following markup:
 
 
-    <a href="#" class="button">Learn More</a>
-
+```<a href="#" class="button">Learn More</a>
 
 - Save the file
 - Refresh browser and navigate to http://pwc.dd:8083/themes/pwc/pattern-lab/public/?p=components-button to view our component
@@ -61,7 +60,7 @@ Twig allows us to reference one template within another and return the rendered 
 - Refresh your browser and navigate to http://pwc.dd:8083/themes/pwc/pattern-lab/public/?p=components-button-outline to view our button-outline component.
 
 
-## Step Four: Using data attributes with Includes 
+## Step Four: Using data attributes with Includes
 
 Our **button-outline** component now has the same markup as our original **button** component.  In order to alter it, we will need a way to pass it variables.
 
@@ -71,7 +70,7 @@ The `include` statement we used above also allow us to pass variables to the ori
 - Edit `button-outline.twig` and add the following markup:
 
 
-    {% include "components-button 
+    {% include "components-button
       with {
         button_label: "Learn More",
         button_url: "#"
@@ -119,7 +118,7 @@ Finally, all we need to do is update our button-outline.yml file and pass the cs
 - Edit `button-outline.twig` and add the following markup:
 
 
-    {% include "components-button 
+    {% include "components-button
       with {
         button_modifier: "button--outline",
         button_label: "Learn More",
@@ -132,4 +131,3 @@ Finally, all we need to do is update our button-outline.yml file and pass the cs
 - Refresh your browser and navigate to http://pwc.dd:8083/themes/pwc/pattern-lab/public/?p=components-button-outline to view our button-outline component.
 
 Our button-outline component now has the correct styling being picked up and if we compare the 2 button components we will see that each one is displaying independently yet they use the same markup.
-
