@@ -8,7 +8,7 @@ Creating a component is actually quite easy.  All that we need is a twig templat
 - Create a new file called `card.twig`
 - Add the following markup:
 
-
+```
     <div class="card">
         <div class="card__media">
           <a href="#"><img src="/sites/pwc.dd/files/media/image/killer-whales.jpg" alt="Killer whale"></a>
@@ -19,7 +19,7 @@ Creating a component is actually quite easy.  All that we need is a twig templat
           <div class="card__teaser">The killer whale or orca is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member.</div>
         </div>
       </div>
-
+```
 
 - Save the file
 - Refresh browser and navigate to http://pwc.dd:8083/themes/pwc/pattern-lab/public/?p=components-card to view our component
@@ -31,7 +31,7 @@ Currently our component displays static values.  Lets replace them using Data at
 - Create a a new file called `card.yml`
 - Add the following content, keeping in mind that YAML requires specific formatting:
 
-
+```
     card_url: "#"
     card_image:
       src: "/sites/pwc.dd/files/media/image/killer-whales.jpg"
@@ -39,13 +39,13 @@ Currently our component displays static values.  Lets replace them using Data at
     card_date: "July 20, 2017"
     card_heading: "Killer whale"
     card_teaser: "The killer whale or orca is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member."
-    
+```  
 
 
 - Save the file
 - Edit `card.twig` and replace the static values with Twig variables for each attribute.
 
-
+```
     <div class="card">
       <div class="card__media">
         <a href="{{ card_url }}"><img src="{{ card_image.src }}" alt="{{ card_image.alt }}"></a>
@@ -56,7 +56,7 @@ Currently our component displays static values.  Lets replace them using Data at
         <div class="card__teaser">{{ card_teaser }}</div>
       </div>
     </div>
-    
+```    
 
 
 - Save the file
@@ -64,4 +64,3 @@ Currently our component displays static values.  Lets replace them using Data at
 - Refresh your browser and navigate to http://pwc.dd:8083/themes/pwc/pattern-lab/public/?p=components-card to view our component.
 
 Our card component is now complete.
-
