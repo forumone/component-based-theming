@@ -5,7 +5,13 @@
       <div class="hero__text">{{ hero_text|raw }}</div>
       {% if button_url %}
         <div class="hero__call-to-action">
-          <a href="{{ button_url }}" class="button button--outline">{{ button_label }}</a>
+          {% include "components-button"
+            with {
+              button_modifier: button_modifier,
+              button_label: button_label,
+              button_url: button_url
+            }
+          %}
         </div>
       {% endif %}
     </div>
