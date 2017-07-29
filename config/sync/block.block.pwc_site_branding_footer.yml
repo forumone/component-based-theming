@@ -8,7 +8,7 @@ dependencies:
     - pwc
 id: pwc_site_branding_footer
 theme: pwc
-region: footer_top
+region: footer
 weight: -4
 provider: null
 plugin: system_branding_block
