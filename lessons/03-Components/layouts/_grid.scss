@@ -1,0 +1,31 @@
+// @file
+// Generic grid styles.
+
+@supports (display: grid) {
+
+  .l-grid {
+    display: grid;
+  }
+
+  .l-grid--50 {
+    @include breakpoint(730px) {
+      grid-column-gap: 1em;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .l-grid--cards {
+    grid-auto-rows: max-content;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr;
+
+    @include breakpoint(600px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpoint(960px) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}

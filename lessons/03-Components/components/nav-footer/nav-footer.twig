@@ -1,0 +1,12 @@
+<nav class="nav-footer" role="navigation">
+  <h2 class="visually-hidden">Footer menu</h2>
+  {% spaceless %}
+  {% block content %}
+  <ul class="nav nav--menu">
+    {% for item in items %}
+    <li class="nav__item"><a class="nav__link" href="{{ item.url }}">{{ item.text|raw }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endblock %}
+  {% endspaceless %}
+</nav>
