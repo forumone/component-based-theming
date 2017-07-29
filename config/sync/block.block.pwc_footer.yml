@@ -10,8 +10,8 @@ dependencies:
     - pwc
 id: pwc_footer
 theme: pwc
-region: footer_bottom
-weight: -4
+region: footer
+weight: -3
 provider: null
 plugin: 'system_menu_block:footer'
 settings:
