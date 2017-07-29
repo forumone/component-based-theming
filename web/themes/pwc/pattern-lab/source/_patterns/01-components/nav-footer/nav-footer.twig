@@ -3,9 +3,9 @@
   {% spaceless %}
   {% block content %}
   <ul class="nav nav--menu">
-    <li class="nav__item"><a class="nav__link" href="#">&copy; 2017 PACIFIC WHALE CONSERVANCY</a></li>
-    <li class="nav__item"><a class="nav__link" href="#"> All rights reserved</a></li>
-    <li class="nav__item"><a class="nav__link" href="#">Privacy Policy</a></li>
+    {% for item in items %}
+    <li class="nav__item"><a class="nav__link" href="{{ item.url }}">{{ item.text|raw }}</a></li>
+    {% endfor %}
   </ul>
   {% endblock %}
   {% endspaceless %}

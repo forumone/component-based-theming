@@ -108,11 +108,11 @@ Finally, all we need to do is update our `button-outline.twig` file and pass the
 
 ```
     {% include "components-button
-      **with {
+      with {
         button_modifier: "button--outline",
         button_label: "Learn More",
         button_url: "#"
-      }**
+      }
     %}
 ```
 
