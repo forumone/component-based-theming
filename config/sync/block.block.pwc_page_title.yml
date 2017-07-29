@@ -1,0 +1,27 @@
+uuid: 577c5f3a-ce04-40fc-9040-57d0a70a1d42
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pwc
+_core:
+  default_config_hash: 8yptDf6WrXxeyevUz4nP5vfr7BtxQqCBMninhV2IJ1g
+id: pwc_page_title
+theme: pwc
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: "/user\r\n/user/*"
+    negate: false
+    context_mapping: {  }
