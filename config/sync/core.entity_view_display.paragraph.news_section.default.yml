@@ -14,17 +14,15 @@ content:
   field_view_one:
     weight: 0
     label: hidden
-    settings:
-      link: false
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_id
     region: content
   field_view_two:
     weight: 1
     label: hidden
-    settings:
-      link: false
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_id
     region: content
 hidden: {  }
