@@ -1,0 +1,11 @@
+<div class="hero" style="background-image: url({{ content.field_background_image|field_value }});">
+  <div class="l-constrain">
+    <div class="hero__content">
+      <h1 class="hero__title">{{ content.field_heading|field_value }}</h1>
+      <div class="hero__text">{{ content.field_subheading|field_value }}</div>
+      <div class="hero__call-to-action">
+        <a class="button button--outline" href="{{ content.field_button_url|field_value }}">{{ content.field_button_label|field_value }}</a>
+      </div>
+    </div>
+  </div>
+</div>
