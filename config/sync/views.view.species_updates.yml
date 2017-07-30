@@ -149,18 +149,7 @@ display:
           entity_type: node
           entity_field: changed
           plugin_id: date
-      header:
-        area_text_custom:
-          id: area_text_custom
-          table: views
-          field: area_text_custom
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content: Updates
-          plugin_id: text_custom
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }

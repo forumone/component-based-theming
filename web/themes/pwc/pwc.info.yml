@@ -45,7 +45,6 @@ regions:
   help: Help
   highlighted: Highlighted
   content: Content
-  footer_top: 'Footer Top'
-  footer_bottom: 'Footer Bottom'
+  footer: Footer
   disabled: 'Disabled'
   page_bottom: 'Page bottom'

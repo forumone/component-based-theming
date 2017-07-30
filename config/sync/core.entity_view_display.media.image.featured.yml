@@ -1,14 +1,13 @@
 uuid: 4eb785eb-ec4a-42dc-b5ce-5c7eecdd5bce
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.media.featured
     - field.field.media.image.field_image
     - media_entity.bundle.image
-    - responsive_image.styles.featured
   module:
-    - responsive_image
+    - image
 id: media.image.featured
 targetEntityType: media
 bundle: image
@@ -18,10 +17,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      responsive_image_style: featured
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
     region: content
 hidden:
   created: true

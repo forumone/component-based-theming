@@ -44,24 +44,19 @@
  */
 #}
 <div class="layout-container">
-  <header class="header" role="banner">
+  {% if page.header %}
     {{ page.header }}
-  </header>
+  {% endif %}
 
   {{ page.breadcrumb }}
   {{ page.highlighted }}
   {{ page.help }}
 
-  <main id="main" class="main" role="main" tabindex="-1">
-    <div class="l-constrain">
-      {% if page.content %}
-        {{ page.content }}
-      {% endif %}
-      </div>
-    </div>
-  </main>
+  {% if page.content %}
+    {{ page.content }}
+  {% endif %}
 
-  <footer class="footer" role="contentinfo">
+  {% if page.footer %}
     {{ page.footer }}
-  </footer>
+  {% endif %}
 </div>
