@@ -5,24 +5,24 @@ dependencies:
   config:
     - core.entity_view_mode.media.card
     - field.field.media.image.field_image
+    - image.style.card
     - media_entity.bundle.image
-    - responsive_image.styles.card
   module:
-    - responsive_image
+    - image
 id: media.image.card
 targetEntityType: media
 bundle: image
 mode: card
 content:
   field_image:
+    type: image
     weight: 0
+    region: content
     label: hidden
     settings:
-      responsive_image_style: card
+      image_style: card
       image_link: ''
     third_party_settings: {  }
-    type: responsive_image
-    region: content
 hidden:
   created: true
   name: true
