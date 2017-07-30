@@ -64,6 +64,8 @@ To verify Composer is working we should be able to open a terminal window and en
 >  
 > Save the file and then open the console from within Acquia Dev Desktop.  You can now run the `composer` command within the console window to see a list of available Composer commands.
 
+Note: some Windows users have also followed these [steps](http://leedavis81.github.io/global-installation-of-composer-on-windows/) for globally installing Composer.
+
 
 ### Node & NPM
 [Node](https://nodejs.org/en/) is a cross platform runtime environment for creating server side and networking applications. Javascript running outside the browser. [NPM](https://www.npmjs.com/) is the package manager for JavaScript used to install, share, and distribute code and is used to manage dependencies in projects.
