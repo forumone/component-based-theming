@@ -149,7 +149,18 @@ display:
           entity_type: node
           entity_field: created
           plugin_id: date
-      header: {  }
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: 'New Species'
+          plugin_id: text_custom
       footer: {  }
       empty: {  }
       relationships: {  }

@@ -1,24 +1,24 @@
-uuid: df2387dd-672f-4d45-a0e2-32e5dd56571d
+uuid: 4eb785eb-ec4a-42dc-b5ce-5c7eecdd5bce
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.card
+    - core.entity_view_mode.media.featured
     - field.field.media.image.field_image
     - media_entity.bundle.image
-    - responsive_image.styles.card
+    - responsive_image.styles.featured
   module:
     - responsive_image
-id: media.image.card
+id: media.image.featured
 targetEntityType: media
 bundle: image
-mode: card
+mode: featured
 content:
   field_image:
     weight: 0
     label: hidden
     settings:
-      responsive_image_style: card
+      responsive_image_style: featured
       image_link: ''
     third_party_settings: {  }
     type: responsive_image

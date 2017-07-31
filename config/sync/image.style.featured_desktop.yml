@@ -1,0 +1,14 @@
+uuid: 786ba05d-9bd4-4dfb-8b30-b6fd2a04ff22
+langcode: en
+status: true
+dependencies: {  }
+name: featured_desktop
+label: 'Featured (2000x600) Desktop'
+effects:
+  361b5ecc-3d93-4e9b-bb5b-4fd52369ebc4:
+    uuid: 361b5ecc-3d93-4e9b-bb5b-4fd52369ebc4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2000
+      height: 600

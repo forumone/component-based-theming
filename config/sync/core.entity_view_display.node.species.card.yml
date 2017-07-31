@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.card
     - field.field.node.species.field_featured_image
-    - field.field.node.species.field_page_content
     - field.field.node.species.field_published
     - field.field.node.species.field_summary
     - node.type.species
@@ -21,7 +20,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      view_mode: card
+      view_mode: featured
       link: false
     third_party_settings: {  }
     type: entity_reference_entity_view
