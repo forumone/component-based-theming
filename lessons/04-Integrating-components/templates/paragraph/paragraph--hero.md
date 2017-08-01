@@ -104,7 +104,7 @@ Since our design dictates that our Hero uses a background image, we need to chan
 
 - Navigate to http://pwc.dd:8083/admin/structure/media/manage/image/display
 - Select the Hero display mode
-- Change the Image field format from Responsive image to URL to image
+- Change the Image field format from Image to URL to image
 - Select the field formatted and change the Image style from None (original image) to Hero (2000x600) Desktop
 - Select the Update button
 - Select the Save button
