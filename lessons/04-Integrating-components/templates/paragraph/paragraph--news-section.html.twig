@@ -1,0 +1,14 @@
+<section class="section section--alt">
+  <div class="l-constrain">
+    <div class="l-grid l-grid--50">
+      <div class="section__col">
+        <h2 class="section__title">Updates</h2>
+        {{ drupal_view(content.field_view_one.0['#plain_text']) }}
+      </div>
+      <div class="section__col">
+        <h2 class="section__title">New Species</h2>
+        {{ drupal_view(content.field_view_two.0['#plain_text']) }}
+      </div>
+    </div>
+  </div>
+</section>

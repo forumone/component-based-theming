@@ -2,8 +2,8 @@ uuid: d8df9bea-aaf7-4d86-b216-30ecb53a03da
 langcode: en
 status: true
 dependencies: {  }
-name: card_mobile
-label: 'Card (600x325) Mobile'
+name: card
+label: 'Card (600x325)'
 effects:
   2db7d799-ca30-40f6-b805-7b11bd9dfd90:
     uuid: 2db7d799-ca30-40f6-b805-7b11bd9dfd90

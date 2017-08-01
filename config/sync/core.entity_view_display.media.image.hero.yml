@@ -5,10 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.media.hero
     - field.field.media.image.field_image
+    - image.style.hero
     - media_entity.bundle.image
-    - responsive_image.styles.hero
   module:
-    - responsive_image
+    - image
 id: media.image.hero
 targetEntityType: media
 bundle: image
@@ -18,10 +18,9 @@ content:
     weight: 0
     label: hidden
     settings:
-      responsive_image_style: hero
-      image_link: ''
+      image_style: hero
     third_party_settings: {  }
-    type: responsive_image
+    type: image_url
     region: content
 hidden:
   created: true
