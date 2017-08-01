@@ -1,0 +1,10 @@
+{% set img_url = node.field_featured_image.entity.field_image.entity.uri.value|image_style('teaser') %}
+{% set img_alt = content.field_featured_image|field_target_entity.field_image.alt %}
+
+<article class="teaser" role="article">
+  <img class="teaser__img" src="{{ img_url }}" alt="{{ img_alt }}">
+  <div class="teaser__body">
+    <div class="teaser__date">{{ content.field_published|field_value }}</div>
+    <h2 class="teaser__heading"><a href="{{ url }}">{{ content.title|field_value }}</a></h2>
+  </div>
+</article>

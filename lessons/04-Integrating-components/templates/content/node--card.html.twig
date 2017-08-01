@@ -1,0 +1,13 @@
+{% set img_url = node.field_featured_image.entity.field_image.entity.uri.value|image_style('card') %}
+{% set img_alt = content.field_featured_image|field_target_entity.field_image.alt %}
+
+<div class="card">
+  <div class="card__media">
+    <a href="{{ url }}"><img src="{{ img_url }}" alt="{{ img_alt }}"></a>
+  </div>
+  <div class="card__body">
+    <div class="card__date">{{ content.field_published|field_value }}</div>
+    <h3 class="card__heading"><a href="{{ url }}">{{ content.title|field_value }}</a></h3>
+    <div class="card__teaser">{{ content.field_summary|field_value }}</div>
+  </div>
+</div>
