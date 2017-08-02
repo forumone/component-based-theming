@@ -1,0 +1,14 @@
+{% set img_url = node.field_featured_image.entity.field_image.entity.uri.value|image_style('card') %}
+{% set img_alt = content.field_featured_image|field_target_entity.field_image.alt %}
+
+{% include "@components/teaser/teaser.twig"
+  with {
+    "teaser_url": url,
+    "teaser_image": {
+      "src": img_url,
+      "alt": img_alt
+    },
+    "teaser_date": content.field_published|field_value,
+    "teaser_heading": content.title|field_value
+  }
+%}

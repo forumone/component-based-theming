@@ -1,0 +1,20 @@
+{% embed "@components/hero/hero.twig"
+  with {
+    "hero_image": content.field_background_image|field_value,
+    "hero_title": content.field_heading|field_value,
+    "hero_text": content.field_subheading|field_value,
+    "has_button": true,
+  }
+%}
+
+  {% block button %}
+    {% include "@components/button/button.twig"
+      with {
+        "button_modifier": "button--outline",
+        "button_url": content.field_button_url|field_value,
+        "button_label": content.field_button_label|field_value
+      }
+    %}
+  {% endblock %}
+
+{% endembed %}

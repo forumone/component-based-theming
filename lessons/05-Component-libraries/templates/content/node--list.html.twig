@@ -1,0 +1,7 @@
+{% include "@components/listing/listing.twig"
+  with {
+    "listing_url": url,
+    "listing_date": content.field_published|field_value,
+    "listing_heading": content.title|field_value
+  }
+%}
