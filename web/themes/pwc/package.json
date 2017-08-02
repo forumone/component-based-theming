@@ -2,10 +2,9 @@
   "name": "pwc",
   "version": "0.1.0",
   "description": "A Drupal theme.",
-  "bugs": "https://github.com/forumone/gesso/issues",
+  "bugs": "https://github.com/forumone/component-based-theming/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/forumone/gesso.git"
   },
   "license": "GPL-2.0+",
   "private": true,
