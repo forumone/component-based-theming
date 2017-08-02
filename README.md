@@ -6,7 +6,7 @@ This repository is for using a Composer based workflow with Drupal 8.  We will b
 ## Assumptions
 This training assumes that you are already running Acquia Dev Desktop and have a familiarity with installing Drupal using the standard means of downloading, setting up a database, configuring a localhost, and completing the browser-based install. In the [Master](https://github.com/forumone/component-based-theming/tree/master#component-based-theming-with-twig) branch, we walked through quickly installing **Acquia Dev Desktop**, **Terminal**, **Composer**, **Node & NPM**, **Grunt**, and **Git**. Ensure that you have a working AMP stack and are comfortable working within the command-line interface using a Terminal window before continuing.
 
-### Notes
+**Notes**
 If you checked out this branch prior to following the steps in the previous lesson and want to make sure your environment is up to date then follow the steps detailed below.
 
 Open a terminal window and execute the following commands:
@@ -33,7 +33,8 @@ The challenge with managing components in Pattern Lab and integrating them into 
 
 However we can overcome this challenge by enabling Twig name spacing and mapping out Pattern Lab folders located within our theme using the Component library module and our themes `*.info.yml` file.
 
-### Topics covered
+**Topics covered**
+
 - Working with the Component Libraries module
 - Enabling Twig Namespaces
 - Using Includes, Extends and Embeds
@@ -73,8 +74,8 @@ We can add our new “namespace” by opening the pwc.info.yml file and adding t
     pages:
       paths:
         - pattern-lab/source/_patterns/04-pages
-
 ```
+
 - Save the file
 - Clear Drupal’s cache to ensure our changes are picked up by the theme.
 
