@@ -1,15 +1,15 @@
 # 03-Components
 
 # Component-based Theming with Twig
-This repository is for using a Composer based workflow with Drupal 8.  We will be using this repository and the branches to maintain various snapshots as we progress thru each lesson.
+This repository is for using a Composer based workflow with Drupal 8.  We will be using this repository and its branches to maintain various snapshots as we progress thru each lesson.
 
 ## Assumptions
-This training assumes that you are already running Acquia Dev Desktop and have a familiarity with installing Drupal using the standard means of downloading, setting up a database, configuring a localhost, and completing the browser-based install. In the [Master](https://github.com/forumone/component-based-theming/tree/master#component-based-theming-with-twig) repo, we walked through quickly installing **Acquia Dev Desktop**, **Terminal**, **Composer**, **Node & NPM**, **Grunt**, and **Git**. Ensure that you have a working AMP stack and are comfortable working within the command-line interface using a Terminal window before continuing.
+This training assumes that you are already running Acquia Dev Desktop and have a familiarity with installing Drupal using the standard means of downloading, setting up a database, configuring a localhost, and completing the browser-based install. In the [Master](https://github.com/forumone/component-based-theming/tree/master#component-based-theming-with-twig) branch, we walked through quickly installing **Acquia Dev Desktop**, **Terminal**, **Composer**, **Node & NPM**, **Grunt**, and **Git**. Ensure that you have a working AMP stack and are comfortable working within the command-line interface using a Terminal window before continuing.
 
-### Notes
-If you checked out this branch prior to following the steps in the previous lesson and want to make sure your environment is up to date then follow the steps detailed below.
+**Notes**
+If you checked out this branch prior to following the steps in the previous lesson and want to make sure your environment is up to date, then follow the steps detailed below.
 
-Open a terminal window and execute the following commands:
+Open a terminal window and run the following commands:
 
 ```
   cd /web/themes/gesso
@@ -17,23 +17,23 @@ Open a terminal window and execute the following commands:
   grunt gessoBuild
 ```
 
-Once Pattern Lab and all assets have been processed you can activate the theme if it has not already been done for you and then simply refresh your browser and the theme will display properly.
+Once Pattern Lab and all assets have been processed, activate the Gesso theme (if its not already active) and then refresh your browser and the theme will display properly.
 
-If you are familiar with Configuration management in Drupal you can also perform the following command line steps within the terminal to ensure any database changes are synched up properly:
+If you are familiar with configuration management in Drupal you can also run the following commands to ensure any database changes are synched up properly:
 
 ```
   cd /web
   drush cim -y
 ```
 
-Finally to have a complete snapshot of lesson two prior to checking out the next lesson you can also perform a database import using the `pwc.sql` file located in the `/db/` folder.
+Finally, to have a complete snapshot of this lesson prior to checking out the next lesson you can also perform a database import using the `pwc.sql` file located in the `/db/` folder.
 
 ## Lesson Three: Building Components
-In this lesson we will be reviewing a design and walk thru identifying the components that make up the page and discuss how they can be created and managed using Pattern Lab.  
+In this lesson we will be reviewing a design, identifying the components that make up the page, and discussing how those components can be created and managed using Pattern Lab.  
 
-Each folder we will be working in contains a readme that walks thru the steps involved in creating a component, layout, template or page.
+Each folder we will be working in contains a readme that details the steps involved in creating the particular component, layout, template or page.
 
-There is also a lessons folder that contains the completed project folders for this section that you can refer to or use to complete the project.
+There is also a **lessons** folder that contains the final versions of the files we will be creating and working with that you can refer to or use to complete the project.
 
 **Topics covered**
 
@@ -43,11 +43,11 @@ There is also a lessons folder that contains the completed project folders for t
 - Understanding Templates and Pages
 
 ## Creating Components
-Anytime we begin the process of building components it helps to review the design and begin mapping out how a specific component is built, any commonalities between components, how a component will be used and if a component can be modified to create a variant.
+When building components it helps to review the design and begin mapping out how a specific component is built, any commonalities between components, how a component will be used and if a component can be modified to create a variant.
 
 Let’s begin with reviewing the [Homepage](https://codepen.io/cchumley/full/KvpoqV/) design that we will be working with.
 
-If we take a look at our homepage design we can break our page layout into various sections with each section containing one or more components.
+If we take a look at our homepage design we can break our page layout into several regions with each region containing one or more components.
 
 [**Header**](https://codepen.io/cchumley/full/zdGWwz/)
 
@@ -125,7 +125,6 @@ If we browse to `/web/themes/pwc/pattern-lab/source/_patterns/02-layouts/main/` 
 **Lesson Eleven: Footer layout**
 
 If we browse to `/web/themes/pwc/pattern-lab/source/_patterns/02-layouts/footer/` we will see a folder that will contain the `_footer.scss` partial along with a `readme` outlining each step that we will be following in developing our Footer layout.
-
 
 ## Understanding Templates & Pages
 Templates and Pages are very similar in Pattern Lab and are often confused.  However a Template is used to peace together various layouts to form page-level objects.  Templates provide context for relatively abstract components.  Whereas Pages are specific instances of Templates.
