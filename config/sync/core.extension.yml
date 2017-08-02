@@ -7,6 +7,7 @@ module:
   block_content: 0
   breakpoint: 0
   ckeditor: 0
+  components: 0
   config: 0
   ctools: 0
   datetime: 0
