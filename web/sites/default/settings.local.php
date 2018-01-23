@@ -72,5 +72,5 @@ $settings['cache']['bins']['dynamic_page_cache'] = 'cache.backend.null';
  *
  */
 $settings['trusted_host_patterns'] = array(
-  '^pwc\.dd$',
+  '^components\.lndo\.site$',
 );
