@@ -22,7 +22,7 @@
         "drupal/admin_toolbar": "^1.19",
         "drupal/components": "^1.0",
         "drupal/console": "~1.0",
-        "drupal/core": "~8.0",
+        "drupal/core": "~8.4",
         "drupal/entity_browser": "^1.0",
         "drupal/entity_embed": "^1.0@beta",
         "drupal/file_entity": "^2.0@beta",
